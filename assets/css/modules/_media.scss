@@ -1,0 +1,324 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+    /*HEADER __------HEADER --__------HEADER -----HEADER*/
+   
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /*HEADER __------HEADER --__------HEADER -----HEADER*/
+    .header{
+   
+        .header-inner{
+            .container{
+                padding: 0 40px;
+                .header-top{
+                    padding: 10px 0;
+
+                    .header-contact{
+                        li{
+                            margin: 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /*HEADER __------HEADER --__------HEADER -----HEADER*/
+    .header{
+   
+        .header-inner{
+            .container{
+                padding: 0 30px;
+                .header-top{
+                    padding: 10px 0;
+
+                    .header-contact{
+                        li{
+                            margin: 0 15px;
+                        }
+                    }
+                }
+                .header-bottom{
+                    .header-bottom-inner{
+                        .navbar{
+                            .navbar-toggler{
+                                margin-left: auto;
+                                padding: 0 26px;
+                                border-left: 1px solid #e2e2e2;
+                                align-self: stretch;
+                                outline: none;
+                                .navbar-toggler-icon{
+                                    width: 25px;
+                                    height: 25px;
+                                    img{
+                                        width: 25px;
+                                        display: block;
+                            
+                                    }
+                                }
+                            }
+                            .collapse{
+                                background-color: $blackText;
+                                position: absolute;
+                                top: 69px;
+                                right: 0;
+                                width: 45%;
+                                padding: 20px 40px;
+                                .nav-item{
+                                    .nav-link{
+                                        color: $white;
+                                        padding: 10px 0;
+                                    }
+                                    .dropdown-menu{
+                                        background-color: $blackText;
+                                        .dropdown-item{
+                                            color: $white !important;
+                                        }
+                                    }
+                                }
+                            }
+                            .show-collapse{
+                                display: block;
+                                z-index: 100;
+                                opacity: 1;
+                                
+                            }
+                            .hide-collapse{
+                                display: none;
+                                z-index: -100;
+                                opacity: 0;
+                            }
+                            .cta-header{
+                                ul{
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+     /*HEADER __------HEADER --__------HEADER -----HEADER*/
+     .header{
+   
+        .header-inner{
+            .container{
+                padding: 0 00px;
+                .header-top{
+                    padding: 10px 0;
+
+                    .header-contact{
+                        li{
+                            margin: 0 15px;
+                        }
+                    }
+                }
+                .header-bottom{
+                    .header-bottom-inner{
+                        .navbar{
+                            .navbar-toggler{
+                                margin-left: auto;
+                                padding: 0 26px;
+                                border-left: 1px solid #e2e2e2;
+                                align-self: stretch;
+                                outline: none;
+                                .navbar-toggler-icon{
+                                    width: 25px;
+                                    height: 25px;
+                                    img{
+                                        width: 25px;
+                                        display: block;
+                            
+                                    }
+                                }
+                            }
+                            .collapse{
+                                background-color: $blackText;
+                                position: absolute;
+                                top: 69px;
+                                right: 0;
+                                width: 45%;
+                                padding: 20px 40px;
+                                .nav-item{
+                                    .nav-link{
+                                        color: $white;
+                                        padding: 10px 0;
+                                    }
+                                    .dropdown-menu{
+                                        background-color: $blackText;
+                                        .dropdown-item{
+                                            color: $white !important;
+                                        }
+                                    }
+                                }
+                            }
+                            .show-collapse{
+                                display: block;
+                                z-index: 100;
+                                opacity: 1;
+                                
+                            }
+                            .hide-collapse{
+                                display: none;
+                                z-index: -100;
+                                opacity: 0;
+                            }
+                            .cta-header{
+                                ul{
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+     /*HEADER __------HEADER --__------HEADER -----HEADER*/
+     .header{
+   
+        .header-inner{
+            .container{
+                padding: 0 00px;
+                .header-top{
+                    display: none;
+                }
+                .header-bottom{
+                    padding: unset;
+                    .header-bottom-inner{
+                        .navbar{
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            .navbar-toggler{
+                                margin-left: auto;
+                                padding: 0 10px;
+                                border-left: none;
+                                align-self: stretch;
+                                outline: none;
+                                .navbar-toggler-icon{
+                                    width: 25px;
+                                    height: 25px;
+                                    img{
+                                        width: 25px;
+                                        display: block;
+                            
+                                    }
+                                }
+                            }
+                            .navbar-brand{
+                     
+                                img{
+                                    width: 95px;
+                                }
+                            }
+                            .collapse{
+                                background-color: $blackText;
+                                position: absolute;
+                                top: 69px;
+                                right: 0;
+                                width: 50%;
+                                padding: 20px 40px;
+                                .nav-item{
+                                    .nav-link{
+                                        color: $white;
+                                        padding: 10px 0;
+                                    }
+                                    .dropdown-menu{
+                                        background-color: $blackText;
+                                        .dropdown-item{
+                                            color: $white !important;
+                                        }
+                                    }
+                                }
+                            }
+                            .show-collapse{
+                                display: block;
+                                z-index: 100;
+                                opacity: 1;
+                                
+                            }
+                            .hide-collapse{
+                                display: none;
+                                z-index: -100;
+                                opacity: 0;
+                            }
+                            .cta-header{
+                                    ul{
+                                        margin-left: 0px;
+                                        li:first-child{
+                                            position: relative;
+                                            .shopping-counter{
+                                                position: absolute;
+                                                bottom: 10%;
+                                                right: 10%;
+                                                transform: translate(-50%,-50%);
+                                                background-color: $golden;
+                                                width: 16px;
+                                                height: 16px;
+                                                border-radius: 50%;
+                                                display: grid;
+                                                place-items: center;
+                                                p{
+                                                    font-size: 10px;
+                                                    margin-bottom: 0;
+                                                    color: $white;
+                                                    font-family: 'Poppins', sans-serif ;
+                                                }
+                                              
+                                            }
+                                        }
+                                        li{
+                                            height: 100%;
+                                            padding: 0  12px;
+                                            border-left: none;
+                                            display: flex;
+                                            align-items: center;
+                                            font-size: 12px;
+                                            
+                                            a{
+                                                img{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                }
+                                
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
