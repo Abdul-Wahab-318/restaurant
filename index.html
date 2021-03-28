@@ -92,7 +92,7 @@
                       <div class="cart-details" id="cartDetails">
                         <div class="cart-details-top">
                           Your Cart
-                          <span>4 items</span>
+                          <span id="itemCounter">3 items</span>
                         </div>
                         <div class="cart-item">
                           <ol class="cart-item-inner">
@@ -100,46 +100,46 @@
                               <span class="cart-item-counter">
                                 1
                               </span>
-                              <span class="cart-item-cross" id="cartCross">
+                              <span class="cart-item-cross" id="cartCross" onclick="deleteCartItem(this)">
                                 <img src="./assets/img/menu/letter-x.svg" alt="">
                               </span>
                               <img src="./assets/img/menu/1.jpg" class="menu-img" width="95px" alt="">
                               <div class="item-details">
                                 <h5>Grilled Steak</h5>
-                                <span>1 </span> <span> x</span> <span> $45</span>
+                                <span>1 </span> <span> x</span> <span>$45</span>
                               </div>
                             </li>
                             <li>
                               <span class="cart-item-counter">
                                 2
                               </span>
-                              <span class="cart-item-cross" id="cartCross">
+                              <span class="cart-item-cross" id="cartCross" onclick="deleteCartItem(this)">
                                 <img src="./assets/img/menu/letter-x.svg" alt="">
                               </span>
                               <img src="./assets/img/menu/2 (1).jpg" class="menu-img" width="95px" alt="">
                               <div class="item-details">
                                 <h5>Cripsy Lobster and Shrimp Bites</h5>
-                                <span>1 </span> <span> x</span> <span> $22</span>
+                                <span>1 </span> <span> x</span> <span>$22</span>
                               </div>
                             </li>
                             <li>
                               <span class="cart-item-counter">
                                 3
                               </span>
-                              <span class="cart-item-cross" id="cartCross">
+                              <span class="cart-item-cross" id="cartCross" onclick="deleteCartItem(this)">
                                 <img src="./assets/img/menu/letter-x.svg" alt="">
                               </span>
                               <img src="./assets/img/menu/3.jpg" class="menu-img" width="95px" alt="">
                               <div class="item-details">
                                 <h5>Chicken Tortilla Soup</h5>
-                                <span>1 </span> <span> x</span> <span> $37</span>
+                                <span>1 </span> <span> x</span> <span>$37</span>
                               </div>
                             </li>
                           </ol>
                         </div>
                         <div class="bill">
                           <span>Subtotal :</span>
-                          <span>$147</span>
+                          <span id="bill">$104</span>
                         </div>
                         <div class="checkout">
                           <button class="checkout-btn">View Cart</button>
@@ -150,8 +150,8 @@
                         <li><a href=""><img src="./assets/img/menu.svg" width="20px" alt=""></a></li>
                       </ul>
                       <ul>
-                        <li class="cart">
-                          <a href="" id="cart"><img src="./assets/img/shopping-bag.svg" alt=""></a>  <div class="shopping-counter"><p>3</p></div>  
+                        <li class="cart" id="cartParent">
+                          <a href="" id="cart" onclick="event.preventDefault()"><img src="./assets/img/shopping-bag.svg" alt=""></a>  <div class="shopping-counter"><p>3</p></div>  
                           <div class="hover-cart" id="hoverCart">
                             <p>Your Cart</p>
                           </div>
