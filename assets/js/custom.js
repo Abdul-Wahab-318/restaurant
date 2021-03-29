@@ -1,3 +1,4 @@
+
 //toggle Hidden navbar
 var hiddenNavbar =document.querySelector('#hiddenNavbar');
 var navbarToggler = document.querySelector('#navbarToggler');
@@ -63,3 +64,21 @@ function deleteCartItem(e)
     document.querySelector('#itemCounter').innerText = itemCounter;
     console.log(itemCounterArray);
 }
+
+//SHARE FUNCIONALITY
+var share = document.querySelector("#share");
+var shareDetails = document.querySelector('#shareDetails');
+var shareList = document.querySelector('#shareList');
+share.addEventListener('click',function(){
+    shareDetails.classList.toggle('show-share-anime');
+    shareDetails.classList.toggle('hide-share-anime');
+    shareList.classList.toggle('show-share-link');
+    shareList.classList.toggle('hide-share-link');
+    
+
+})
+
+setTimeout(function(){
+    shareDetails.style.opacity="1"
+},1050)
+

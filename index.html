@@ -34,6 +34,15 @@
             </div>
             <div class="header-bottom">
               <div class="header-bottom-inner">
+                <div class="share-details hide-share-anime" id="shareDetails">
+                  <ul class="hide-share-link" id="shareList">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Pinterest</a></li>
+                    <li><a href="">Tumblr</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Linkedin</a></li>
+                  </ul>
+                </div>
                   <nav class="navbar navbar-expand-lg navbar-light ">
                     <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""></a>
                     <button class="navbar-toggler" id="navbarToggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -156,7 +165,14 @@
                             <p>Your Cart</p>
                           </div>
                         </li>
-                        <li><a href=""><img src="./assets/img/megaphone.svg" alt=""></a></li>
+                        <li class="share" id="share">
+                          <a href="" onclick="event.preventDefault()"><img src="./assets/img/megaphone.svg" alt=""></a>
+                          <div class="hover-share" id="hoverShare">
+                            <p>Share</p>
+                          </div>
+                        </li>
+
+
                         <li class="pr-0 d-none d-sm-flex"><a href="">RESERVATION</a></li>
                         <li class="pr-0 d-xs-flex d-sm-none"><a href=""><img src="./assets/img/bookmark.svg" width="20px" alt=""></a></li>
                       </ul>

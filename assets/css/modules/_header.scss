@@ -94,6 +94,96 @@ ul{
                 padding-top: 8px;
                 .header-bottom-inner{
                     background-color: $white;
+                    position: relative;
+                    z-index: 500;
+                    .share-details{
+                        opacity: 0;
+                        overflow: hidden;
+                        width: 100%;
+                        height: 108px;
+                        background-color: $sharebg;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0%;
+                        z-index: 700;
+                        transform: translateY(+100%);
+                        border: 1px solid $borderEEE;
+                        border-top: 1px solid $borderEEE;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        ul{
+                            height: 100%;
+                            padding: none;
+                            margin: none;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 0;
+                            li{
+                                height: 100%;
+                                margin: 0 20px;
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 100%;
+                                    width: auto;
+                                    font-size: 14px;
+                                    font-weight: 800;
+                                    color: $blackText;
+                                    transition: all 300ms;
+                                }
+                                &:hover a{
+                                    color: $golden;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    .show-share-anime{
+                        animation: show-share 500ms cubic-bezier(0.91,-0.08, 1, 1) forwards;
+                    }
+                    .hide-share-anime{
+                        animation: hide-share 500ms cubic-bezier(0.91,-0.08, 1, 1) forwards 500ms;
+                    }
+                    @keyframes show-share {
+                        from{
+                            height: 0px;
+                        }
+                        to{
+                            height: 108px;
+                        }
+                    }
+                    @keyframes hide-share {
+                        from{
+                            height: 108px;
+                        }
+                        to{
+                            height: 0px;
+                        }
+                    }
+                    .show-share-link{
+                        animation:  show-share-link 600ms ease-in  forwards 500ms;
+                    }
+                    .hide-share-link{
+                        animation:  hide-share-link 600ms ease-in forwards ; 
+                    }
+                    @keyframes show-share-link {
+                        from {
+                            opacity: 0;
+                        }
+                        to{
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes hide-share-link {
+                        from {
+                            opacity: 1;
+                        }
+                        to{
+                            opacity: 0;
+                        }
+                    }
                     .navbar{
                         height: 69px;
                         padding:  0 25px;
@@ -289,7 +379,7 @@ ul{
                                 ul{
                                     align-self: stretch;
                                     margin-left: 40px;
-                                    display: flex;
+                                    display: flex;   //cart button
                                     li:first-child{
                                         position: relative;
                                         &:hover .hover-cart{
@@ -337,6 +427,35 @@ ul{
                                                 font-family: 'Poppins', sans-serif ;
                                             }
                                           
+                                        }
+                                    }
+                                    li:nth-child(2){  //share button
+                                        position: relative;
+                                        &:hover .hover-share{
+                                            opacity: 1;
+                                            z-index: 100;
+                                        }
+                                        .hover-share{
+                                            transition: 300ms all ease;
+                                            opacity: 0;
+                                            z-index: -300 ;
+                                            background-color: $white;
+                                            position: absolute;
+                                            bottom: 0px;
+                                            right: 0;
+                                            transform: translate(0%,+100%);
+                                            width: 140px;
+                                            height: 50px;
+                                            line-height: 50px;
+                                            border: 1px solid #eee;
+                                            border-top: 0;
+                                            p{
+                                                font-family: 'Playfair Display';
+                                                text-align: center;
+                                                color: $blackText;
+                                                font-weight: 600;
+                                                margin-bottom: 0;
+                                            }
                                         }
                                     }
                                     li{
