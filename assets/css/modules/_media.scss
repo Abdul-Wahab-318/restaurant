@@ -273,7 +273,7 @@
                                     padding: 25px 25px;
                                     position: absolute;
                                     bottom: 0;
-                                    right: 0;
+                                    right: -10px;
                                     .cart-details-top{
                                         padding-bottom: 20px;
                                         font-weight: 600;
@@ -361,6 +361,9 @@
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
+                                        &::after{
+                                            display: none;
+                                        }
                                         button{
                                             background-color: $btnBlack;
                                             color: $white;

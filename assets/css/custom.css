@@ -27,6 +27,7 @@ ul {
   right: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 5;
+  overflow: hidden;
 }
 
 .header .header-inner .container {
@@ -354,7 +355,7 @@ ul {
   padding: 25px 25px;
   position: absolute;
   bottom: 0;
-  right: -55px;
+  right: 0px;
   -webkit-transform: translate(0%, 100%);
           transform: translate(0%, 100%);
   -webkit-transition: all 300ms ease;
@@ -476,8 +477,8 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 0;
-  border-top: 1px dotted #eee;
-  border-bottom: 1px dotted #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .bill :first-child {
@@ -501,6 +502,22 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .checkout::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 1px;
+  background-color: #ccc;
+  left: 47%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .checkout button {
@@ -867,7 +884,7 @@ ul {
     padding: 25px 25px;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -10px;
   }
   .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .cart-details-top {
     padding-bottom: 20px;
@@ -968,6 +985,9 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .checkout::after {
+    display: none;
   }
   .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .checkout button {
     background-color: #292929;

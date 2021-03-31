@@ -63,6 +63,12 @@ function deleteCartItem(e)
     itemCounter = itemCounterArray.join("");
     document.querySelector('#itemCounter').innerText = itemCounter;
     console.log(itemCounterArray);
+    //reducing cart circular shape counter value
+    var shapeCounter = document.querySelector('#cartShapeCounter').innerHTML;
+    numberShapeCounter = parseInt(shapeCounter);
+    numberShapeCounter--;
+    document.querySelector('#cartShapeCounter').innerHTML = numberShapeCounter;
+
 }
 
 //SHARE FUNCIONALITY
