@@ -21,7 +21,57 @@ ul{
         height: 100vh;
         .hero-overlay{
             @include hero-overlay;
-            overflow: hidden
+            overflow: hidden;
+            .hero-dec-top{
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top: 52px;
+                left: 80px;
+                transform: translateY(0%);
+                background-color: transparent;
+                border-left: 1px dotted rgba(255,255,255,0.4);
+                border-top: 1px dotted rgba(255,255,255,0.4);
+            }
+            .hero-dec-bottom{
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                bottom: 52px;
+                left: 80px;
+                transform: translateY(0%);
+                background-color: transparent;
+                border-left: 1px dotted rgba(255,255,255,0.4);
+                border-bottom: 1px dotted rgba(255,255,255,0.4);
+            }
+            .hero-social{
+                position: absolute;
+                left: 52px;
+                top: 50%;
+                transform: translateY(-50%);
+                li{
+                    background-color: $heroSocial;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(255,255,255,0.2);
+                    :hover{
+                        background-color: rgba(255,255,255,0.2);
+                        
+                    }
+                    a{
+                        display: block;
+                        height: 50px;
+                        width: 50px;
+                        text-align: center;
+                        line-height: 50px;
+                        transition: all 300ms ;
+                        i{
+                            
+                        }
+                    }
+                }
+            }
         }
         .container{
             @include container;

@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">   
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="./assets/css/style.css"> 
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="./assets/css/custom.css">
     <title>Restaurant</title>
@@ -19,7 +21,19 @@
     <div class="site-wrapper">
       <header class="header">
         <div class="header-inner" style="background-image: url(./assets/img/bg/hero1.jpg);">
-          <div class="hero-overlay"></div>
+          <div class="hero-overlay">
+            <!--HERO DECORATIONS-->
+            <div class="hero-dec-top"></div>
+            <div class="hero-dec-bottom"></div>
+            <ul class="hero-social">
+              <li><a href=""><i class="icon-facebook-app-symbol"></i></a></li>
+              <li><a href=""><i class="icon-instagram-1"></i></a></li>
+              <li><a href=""><i class="icon-twitter"></i></a></li>
+              <li><a href=""><i class="icon-skype" style="color: gold;"></i></a></li>
+            </ul>
+            <!--HERO DEC END-->
+          </div>
+          <!--NAVBAR-->
           <div class="container">
             <div class="header-top">
               <ul class="language">
@@ -44,7 +58,7 @@
                   </ul>
                 </div>
                   <nav class="navbar navbar-expand-lg navbar-light ">
-                    <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""></a>
+                    <a class="navbar-brand" href="#"><img src="./assets/img/icons/logo.svg" alt=""></a>
                     <button class="navbar-toggler" id="navbarToggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"><img src="./assets/img/menu.svg" width="20px" alt=""></span>
                     </button>
@@ -160,13 +174,13 @@
                       </ul>
                       <ul>
                         <li class="cart" id="cartParent">
-                          <a href="" id="cart" onclick="event.preventDefault()"><img src="./assets/img/shopping-bag.svg" alt=""></a>  <div class="shopping-counter"><p id="cartShapeCounter">3</p></div>  
+                          <a href="" id="cart" onclick="event.preventDefault()"><img src="./assets/img/icons/shopping-bag.svg" alt=""></a>  <div class="shopping-counter"><p id="cartShapeCounter">3</p></div>  
                           <div class="hover-cart" id="hoverCart">
                             <p>Your Cart</p>
                           </div>
                         </li>
                         <li class="share" id="share">
-                          <a href="" onclick="event.preventDefault()"><img src="./assets/img/megaphone.svg" alt=""></a>
+                          <a href="" onclick="event.preventDefault()"><img src="./assets/img/icons/megaphone.svg" alt=""></a>
                           <div class="hover-share" id="hoverShare">
                             <p>Share</p>
                           </div>
@@ -174,12 +188,13 @@
 
 
                         <li class="pr-0 d-none d-sm-flex"><a href="">RESERVATION</a></li>
-                        <li class="pr-0 d-xs-flex d-sm-none"><a href=""><img src="./assets/img/bookmark.svg" width="20px" alt=""></a></li>
+                        <li class="pr-0 d-xs-flex d-sm-none"><a href=""><img src="./assets/img/icons/bookmark.svg" width="20px" alt=""></a></li>
                       </ul>
                     </div>
                   </nav>
               </div>
             </div>
+            <!--NAVBAR-->
           </div>
         </div>
       </header>
