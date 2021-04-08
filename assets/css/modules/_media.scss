@@ -1,3 +1,15 @@
+@media (min-width: 1200px) and (max-width: 1568px){
+    .hero-social{
+        display: none;
+    }
+    .hero-dec-top{
+        display: none;
+    }
+    .hero-dec-bottom{
+        display: none;
+    }
+}
+
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  
     /*HEADER __------HEADER --__------HEADER -----HEADER*/
@@ -10,6 +22,17 @@
     .header{
    
         .header-inner{
+            .hero-overlay{
+                .hero-social{
+                    display: none;
+                }
+                .hero-dec-top{
+                    display: none;
+                }
+                .hero-dec-bottom{
+                    display: none;
+                }
+            }
             .container{
                 padding: 0 40px;
                 .header-top{
@@ -35,6 +58,17 @@
     .header{
    
         .header-inner{
+            .hero-overlay{
+                .hero-social{
+                    display: none;
+                }
+                .hero-dec-top{
+                    display: none;
+                }
+                .hero-dec-bottom{
+                    display: none;
+                }
+            }
             .container{
                 padding: 0 30px;
                 .header-top{
@@ -118,6 +152,17 @@
      .header{
    
         .header-inner{
+            .hero-overlay{
+                .hero-social{
+                    display: none;
+                }
+                .hero-dec-top{
+                    display: none;
+                }
+                .hero-dec-bottom{
+                    display: none;
+                }
+            }
             .container{
                 padding: 0 00px;
                 .header-top{
@@ -202,6 +247,17 @@
      .header{
    
         .header-inner{
+            .hero-overlay{
+                .hero-social{
+                    display: none;
+                }
+                .hero-dec-top{
+                    display: none;
+                }
+                .hero-dec-bottom{
+                    display: none;
+                }
+            }
             .container{
                 padding: 0 00px;
                 .header-top{
