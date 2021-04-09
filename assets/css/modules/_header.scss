@@ -14,8 +14,73 @@ a{
 ul{
     margin: unset
 }
+
 .header{
-   
+    position: relative;
+    .brush-bottom{
+        position: absolute;
+        bottom: -1%;
+        z-index: 12;
+    }
+    .hero-dec-footer{
+        position: absolute;
+        bottom: 80px;
+        width: 100%;
+        .container{
+            @include container;
+            padding: unset;
+            position: relative;
+            .discover-parent{
+                position: relative;
+                z-index: 200;
+                color: white;
+                display: flex;
+                align-items: center;
+                
+                span{
+                    margin-bottom: 0;
+                    font-size: 12px;
+                    @include font-second;
+                    font-weight: 600;
+                    margin-left: 20px;
+                }
+                .mouse{
+                    width: 20px;
+                    height: 30px;
+                    border-radius: 6px;
+                    background-color: transparent;
+                    border : 2px solid $white;
+                    position: relative;
+                    &::after{
+                        display: block;
+                        position: absolute;
+                        content: '';
+                        top: 5px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background-color: white;
+                        opacity: 0.9;
+                        animation: mouseScroll 3s ease infinite;
+                    }
+                }
+            }
+            .double-arrow{
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 300;
+                a{
+                    img{
+                        width: 17px;
+                    }
+                }
+                
+            }
+        }
+    }
     .header-inner{
         position: relative;
         height: 100vh;
@@ -49,6 +114,7 @@ ul{
                 left: 52px;
                 top: 50%;
                 transform: translateY(-50%);
+                z-index: 300;
                 li{
                     background-color: $heroSocial;
                     display: flex;
@@ -77,6 +143,8 @@ ul{
                 transform: translate(-50%,-50%);
                 width: 100%;
                 .container{
+                    transform: unset;
+                    position: unset !important;
                     @include container;
                     color: white;
                     h4{
@@ -101,7 +169,7 @@ ul{
                         font-weight: 800;
                         @include font-second;
                         font-size: 50px;
-                        margin-bottom: 40px;
+                        margin-bottom: 55px;
                         line-height: 70px;
                     }
                     .click-menu{
@@ -126,11 +194,16 @@ ul{
             }
         }
         .container{
+            position: fixed !important;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0%;
             @include container;
             padding: unset;
             position: relative;
             z-index: 15;
             .header-top{
+                transition: all 300ms ease;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -194,11 +267,12 @@ ul{
                 }
             }
             .header-bottom{
+                transition: all 300ms ease;
                 padding-top: 8px;
                 .header-bottom-inner{
                     background-color: $white;
                     position: relative;
-                    z-index: 500;
+                    z-index: 1200;
                     .share-details{
                         opacity: 0;
                         overflow: hidden;
@@ -606,6 +680,9 @@ ul{
                         }
                     }
                 }
+            }
+            .hide-hBottom{     
+                transform: translateY(-52px);
             }
         }
     }

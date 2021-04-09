@@ -1,4 +1,30 @@
 /* MIX INS MIX INS*/
+/*animation*/
+@-webkit-keyframes mouseScroll {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    opacity: 0.9;
+  }
+  to {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+}
+@keyframes mouseScroll {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    opacity: 0.9;
+  }
+  to {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+}
+
 * {
   font-family: 'Playfair Display', serif;
   margin: 0;
@@ -12,6 +38,85 @@ a:hover {
 
 ul {
   margin: unset;
+}
+
+.header {
+  position: relative;
+}
+
+.header .brush-bottom {
+  position: absolute;
+  bottom: -1%;
+  z-index: 12;
+}
+
+.header .hero-dec-footer {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+}
+
+.header .hero-dec-footer .container {
+  max-width: 1224px;
+  padding: unset;
+  position: relative;
+}
+
+.header .hero-dec-footer .container .discover-parent {
+  position: relative;
+  z-index: 200;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .hero-dec-footer .container .discover-parent span {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.header .hero-dec-footer .container .discover-parent .mouse {
+  width: 20px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 2px solid white;
+  position: relative;
+}
+
+.header .hero-dec-footer .container .discover-parent .mouse::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.9;
+  -webkit-animation: mouseScroll 3s ease infinite;
+          animation: mouseScroll 3s ease infinite;
+}
+
+.header .hero-dec-footer .container .double-arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 300;
+}
+
+.header .hero-dec-footer .container .double-arrow a img {
+  width: 17px;
 }
 
 .header .header-inner {
@@ -62,6 +167,7 @@ ul {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 300;
 }
 
 .header .header-inner .hero-overlay .hero-social li {
@@ -102,6 +208,9 @@ ul {
 }
 
 .header .header-inner .hero-overlay .hero-caption-parent .container {
+  -webkit-transform: unset;
+          transform: unset;
+  position: unset !important;
   max-width: 1224px;
   color: white;
 }
@@ -129,7 +238,7 @@ ul {
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
   font-size: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
   line-height: 70px;
 }
 
@@ -156,6 +265,11 @@ ul {
 }
 
 .header .header-inner .container {
+  position: fixed !important;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0%;
   max-width: 1224px;
   padding: unset;
   position: relative;
@@ -163,6 +277,8 @@ ul {
 }
 
 .header .header-inner .container .header-top {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,13 +366,15 @@ ul {
 }
 
 .header .header-inner .container .header-bottom {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   padding-top: 8px;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner {
   background-color: white;
   position: relative;
-  z-index: 500;
+  z-index: 1200;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .share-details {
@@ -807,6 +925,11 @@ ul {
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header ul li a img {
   width: 20px;
+}
+
+.header .header-inner .container .hide-hBottom {
+  -webkit-transform: translateY(-52px);
+          transform: translateY(-52px);
 }
 
 @media (min-width: 1200px) and (max-width: 1568px) {

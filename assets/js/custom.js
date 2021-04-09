@@ -88,3 +88,20 @@ setTimeout(function(){
     shareDetails.style.opacity="1"
 },1050)
 
+//header scroll function 
+
+var hTop = document.querySelector('#headerTop');
+var hBottom = document.querySelector('#headerBottom');
+window.addEventListener('scroll',function(){
+
+    var distanceFromTop = window.scrollY;
+    if(distanceFromTop>120)
+    {
+        hBottom.classList.add('hide-hBottom');
+        
+    }
+    else 
+    {
+        hBottom.classList.remove('hide-hBottom');
+    }
+})
