@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?p421hu');
-  src:  url('fonts/icomoon.eot?p421hu#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?p421hu') format('truetype'),
-    url('fonts/icomoon.woff?p421hu') format('woff'),
-    url('fonts/icomoon.svg?p421hu#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?8lsl2k');
+  src:  url('fonts/icomoon.eot?8lsl2k#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8lsl2k') format('truetype'),
+    url('fonts/icomoon.woff?8lsl2k') format('woff'),
+    url('fonts/icomoon.svg?8lsl2k#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bookmark:before {
+  content: "\e907";
+}
+.icon-logo:before {
+  content: "\e908";
+}
+.icon-megaphone:before {
+  content: "\e909";
+}
+.icon-megaphone1:before {
+  content: "\e90a";
+}
+.icon-menu:before {
+  content: "\e90b";
+}
+.icon-right:before {
+  content: "\e90c";
+  color: #fcfcfc;
+}
+.icon-right-arrow:before {
+  content: "\e90d";
+  color: #fff;
+}
+.icon-shopping-bag:before {
+  content: "\e90e";
+}
+.icon-shopping-bag-1:before {
+  content: "\e90f";
+}
+.icon-two-down-arrows:before {
+  content: "\e910";
+  color: #fff;
+}
 .icon-instagram-1:before {
   content: "\e900";
-  color: #fff;  
+  color: #fff;
 }
 .icon-twitter:before {
   content: "\e901";

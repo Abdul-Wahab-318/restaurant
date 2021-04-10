@@ -115,8 +115,37 @@ ul {
   z-index: 300;
 }
 
-.header .hero-dec-footer .container .double-arrow a img {
+.header .hero-dec-footer .container .double-arrow a .icon-two-down-arrows {
   width: 17px;
+}
+
+.header .hero-dec-footer .container .double-arrow a .icon-two-down-arrows::before {
+  color: white;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.header .hero-dec-footer .container .double-arrow a:hover .icon-two-down-arrows::before {
+  color: #b19058;
+}
+
+.header .embedded-video-parent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .header-inner {
@@ -146,6 +175,62 @@ ul {
   background-color: transparent;
   border-left: 1px dotted rgba(255, 255, 255, 0.4);
   border-top: 1px dotted rgba(255, 255, 255, 0.4);
+}
+
+.header .header-inner .hero-overlay .video-btn-parent {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 100;
+}
+
+.header .header-inner .hero-overlay .video-btn-parent .video-btn {
+  padding: 0 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-inner .hero-overlay .video-btn-parent .video-btn div {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+}
+
+.header .header-inner .hero-overlay .video-btn-parent .video-btn div img {
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.2);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.header .header-inner .hero-overlay .video-btn-parent .video-btn div:hover img {
+  -webkit-box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.header .header-inner .hero-overlay .video-btn-parent .video-btn span {
+  margin-left: 30px;
+  color: white;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .header .header-inner .hero-overlay .hero-dec-bottom {
@@ -253,7 +338,7 @@ ul {
   font-weight: 700;
 }
 
-.header .header-inner .hero-overlay .hero-caption-parent .container .click-menu img {
+.header .header-inner .hero-overlay .hero-caption-parent .container .click-menu i {
   margin-left: 30px;
   margin-bottom: 3px;
 }
@@ -262,6 +347,10 @@ ul {
   background-color: white;
   color: #222222;
   border: 1px solid white;
+}
+
+.header .header-inner .hero-overlay .hero-caption-parent .container .click-menu:hover i::before {
+  color: #b19058;
 }
 
 .header .header-inner .container {

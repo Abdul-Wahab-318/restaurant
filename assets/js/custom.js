@@ -105,3 +105,27 @@ window.addEventListener('scroll',function(){
         hBottom.classList.remove('hide-hBottom');
     }
 })
+//show video on click
+var videoBtn = document.querySelector('#videoBtn');
+var embeddedVideo = document.querySelector('#embeddedVideoParent');
+var video = document.querySelector('#video');
+videoBtn.addEventListener('click',function(){
+    embeddedVideo.classList.toggle('d-none');
+    createIframe();
+})
+embeddedVideo.addEventListener('click',function(){
+    embeddedVideo.classList.toggle('d-none');
+    ifrm.src = '';
+})
+
+
+var ifrm = document.createElement("iframe");
+function createIframe(){
+            
+    ifrm.setAttribute("src", "https://www.youtube.com/embed/9Y9wuCyMkFk");
+    ifrm.style.width = "1060px";
+    ifrm.style.height = "615px";
+    ifrm.style.border = 'transparent'
+    video.appendChild(ifrm);
+    console.log('creating iframe');
+}

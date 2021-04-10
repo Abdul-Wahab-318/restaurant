@@ -73,13 +73,36 @@ ul{
                 top: 0;
                 z-index: 300;
                 a{
-                    img{
+                    .icon-two-down-arrows{
                         width: 17px;
+                        &::before{
+                            color: white;
+                            transition: all 300ms ease;
+                        }
+                    }
+                    &:hover{
+                        .icon-two-down-arrows{
+                            &::before{
+                                color:  $golden;
+                            }
+                        }
                     }
                 }
                 
             }
         }
+    }
+    .embedded-video-parent{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .header-inner{
         position: relative;
@@ -97,6 +120,46 @@ ul{
                 background-color: transparent;
                 border-left: 1px dotted rgba(255,255,255,0.4);
                 border-top: 1px dotted rgba(255,255,255,0.4);
+            }
+            .video-btn-parent{
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                z-index: 100;
+                .video-btn{
+                    padding: 0 90px;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: transparent;
+                        img{
+                            width: 50px;
+                            background-color: white;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.2);
+                            transition:  all 300ms ease-in-out;
+                        }
+                        &:hover{
+                            img{
+                                box-shadow: 0px 0px 0px 15px rgba(255,255,255,0.2);
+                            }
+                            
+                        }
+                    }
+                    
+                    span{
+                        margin-left: 30px;
+                        color: $white;
+                        font-size: 13px;
+                        font-style: italic;
+                        font-weight: 600;
+                    }
+                }
             }
             .hero-dec-bottom{
                 width: 80px;
@@ -180,14 +243,19 @@ ul{
                         border: 1px solid $golden;
                         font-size: 13px;
                         font-weight: 700;
-                        img{
+                        i{
                             margin-left: 30px;
                             margin-bottom: 3px;
-                        }
+                        }   
                         &:hover{
                             background-color: white;
                             color: $blackText;
-                            border: 1px solid $white
+                            border: 1px solid $white;
+                            i{
+                                &::before{
+                                    color: $golden ;
+                                }
+                            }
                         }
                     }
                 }
