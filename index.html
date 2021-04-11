@@ -31,12 +31,6 @@
               <li><a href=""><i class="icon-twitter" style="font-size: 13px;"></i></a></li>
               <li><a href=""><i class="icon-skype"  style="font-size: 13px;"></i></a></li>
             </ul>
-            <div class="video-btn-parent">
-              <div class="video-btn" id="videoBtn">
-                <div><img src="./assets/img/icons/play-button.svg"  alt=""></div>
-                <span>View Promo Video</span>
-              </div>
-            </div>
             <!--HERO DEC END-->
 
             <!--HERO CAPTION__------HERO CAPTION--___----->
@@ -76,7 +70,7 @@
                   <nav class="navbar navbar-expand-lg navbar-light ">
                     <a class="navbar-brand" href="#"><img src="./assets/img/icons/logo.svg" alt=""></a>
                     <button class="navbar-toggler" id="navbarToggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"><img src="./assets/img/menu.svg" width="20px" alt=""></span>
+                      <span class="navbar-toggler-icon"><img src="./assets/img/icons/menu.svg" width="20px" alt=""></span>
                     </button>
                   
                     <div class="collapse navbar-collapse hide-collapse" id="hiddenNavbar">
@@ -186,7 +180,7 @@
                         </div>
                       </div>
                       <ul class="d-none">
-                        <li><a href=""><img src="./assets/img/menu.svg" width="20px" alt=""></a></li>
+                        <li><a href=""><img src="./assets/img/icons/menu.svg" width="20px" alt=""></a></li>
                       </ul>
                       <ul>
                         <li class="cart" id="cartParent">
@@ -203,7 +197,7 @@
                         </li>
 
 
-                        <li class="pr-0 d-none d-sm-flex"><a href="">RESERVATION</a></li>
+                        <li class="pr-0 d-none d-sm-flex reservation"><a href="">RESERVATION</a></li>
                         <li class="pr-0 d-xs-flex d-sm-none"><a href=""><img src="./assets/img/icons/bookmark.svg" width="20px" alt=""></a></li>
                       </ul>
                     </div>
@@ -216,21 +210,28 @@
         <div class="embedded-video-parent d-none" id="embeddedVideoParent">
               <div class="video" id="video"></div>
         </div>
+        <div class="video-btn-parent d-none d-lg-block">
+          <div class="video-btn" id="videoBtn">
+            <div><img src="./assets/img/icons/play-button.svg"  alt=""></div>
+            <span>View Promo Video</span>
+          </div>
+        </div>
         <div class="hero-dec-footer">
           <div class="container">
             <div class="discover-parent">
               <div class="mouse"></div>
               <span>Scroll down to Discover</span>
+              <div class="double-arrow"><a href="#e" ><i class="icon-two-down-arrows"></i></a></div>
             </div>
-            <div class="double-arrow"><a href="" onclick="event.preventDefault()"><i class="icon-two-down-arrows"></i></a></div>
+            
           </div>
         </div>
-        <div class="brush-bottom">
-          <img src="./assets/img/dec/brush-dec.png" width="100%" alt="">
+        <div class="brush-bottom" style="background-image: url(./assets/img/dec/brush-dec.png);">
+          
         </div>
       </header>
 
-      <div style="height: 100vh; width: 100%;"></div>
+      <div style="height: 100vh; width: 100%;" id="e"></div>
 
       
 

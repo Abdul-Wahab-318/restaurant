@@ -13,7 +13,8 @@ $heroSocial: rgba(255,255,255,0.1);
 
 /* MIX INS MIX INS*/
 @mixin container {
-    max-width: 1224px;
+    max-width: 1239px;
+    padding: 0 15px;
 }
 @mixin hero-overlay {
     position: absolute;
@@ -22,7 +23,7 @@ $heroSocial: rgba(255,255,255,0.1);
     left: 0;
     right: 0;
     background-color: rgba($color: #000000, $alpha: 0.4);
-    z-index: 5;
+    z-index: 00;
 }
 @mixin font-second {
     font-family: 'Poppins', sans-serif ;

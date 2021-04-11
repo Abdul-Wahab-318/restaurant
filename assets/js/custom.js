@@ -14,6 +14,7 @@ let hoverCart = document.querySelector('#hoverCart');
 let cartDetails = document.querySelector('#cartDetails');
 function toggleCartDetails(){
     console.log('clickable')
+    videoBtn.classList.toggle('d-none');
     cartDetails.classList.toggle('show-cart-details');
     hoverCart.style.display='none';
     setTimeout(function(){
@@ -93,7 +94,7 @@ setTimeout(function(){
 var hTop = document.querySelector('#headerTop');
 var hBottom = document.querySelector('#headerBottom');
 window.addEventListener('scroll',function(){
-
+    
     var distanceFromTop = window.scrollY;
     if(distanceFromTop>120)
     {
@@ -125,7 +126,7 @@ function createIframe(){
     ifrm.setAttribute("src", "https://www.youtube.com/embed/9Y9wuCyMkFk");
     ifrm.style.width = "1060px";
     ifrm.style.height = "615px";
-    ifrm.style.border = 'transparent'
+    ifrm.style.border = 'transparent';
     video.appendChild(ifrm);
     console.log('creating iframe');
 }

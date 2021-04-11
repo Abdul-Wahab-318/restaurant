@@ -5,7 +5,9 @@
     list-style-type: none;
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 a{
     &:hover{
         text-decoration: none
@@ -19,8 +21,11 @@ ul{
     position: relative;
     .brush-bottom{
         position: absolute;
-        bottom: -1%;
+        bottom: 0%;
         z-index: 12;
+        background-image: url(./assets/img/dec/brush-dec.png);
+        background-position: 0px;
+        width: 100%;height: 45px;
     }
     .hero-dec-footer{
         position: absolute;
@@ -28,7 +33,7 @@ ul{
         width: 100%;
         .container{
             @include container;
-            padding: unset;
+            //padding: unset;
             position: relative;
             .discover-parent{
                 position: relative;
@@ -66,29 +71,70 @@ ul{
                         animation: mouseScroll 3s ease infinite;
                     }
                 }
-            }
-            .double-arrow{
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: 300;
-                a{
-                    .icon-two-down-arrows{
-                        width: 17px;
-                        &::before{
-                            color: white;
-                            transition: all 300ms ease;
-                        }
-                    }
-                    &:hover{
+                .double-arrow{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 300;
+                    a{
                         .icon-two-down-arrows{
+                            width: 17px;
                             &::before{
-                                color:  $golden;
+                                color: white;
+                                transition: all 300ms ease;
+                            }
+                        }
+                        &:hover{
+                            .icon-two-down-arrows{
+                                &::before{
+                                    color:  $golden;
+                                }
                             }
                         }
                     }
+                    
                 }
-                
+            }
+            
+        }
+    }
+    .video-btn-parent{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 500;
+        .video-btn{
+            padding: 0 90px;
+            display: flex;
+            align-items: center;
+            div{
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                img{
+                    width: 50px;
+                    background-color: white;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.2);
+                    transition:  all 300ms ease-in-out;
+                }
+                &:hover{
+                    img{
+                        box-shadow: 0px 0px 0px 15px rgba(255,255,255,0.2);
+                    }
+                    
+                }
+            }
+            
+            span{
+                margin-left: 30px;
+                color: $white;
+                font-size: 13px;
+                font-style: italic;
+                font-weight: 600;
             }
         }
     }
@@ -121,46 +167,7 @@ ul{
                 border-left: 1px dotted rgba(255,255,255,0.4);
                 border-top: 1px dotted rgba(255,255,255,0.4);
             }
-            .video-btn-parent{
-                position: absolute;
-                top: 50%;
-                right: 0;
-                transform: translateY(-50%);
-                z-index: 100;
-                .video-btn{
-                    padding: 0 90px;
-                    display: flex;
-                    align-items: center;
-                    div{
-                        cursor: pointer;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: transparent;
-                        img{
-                            width: 50px;
-                            background-color: white;
-                            border-radius: 50%;
-                            box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.2);
-                            transition:  all 300ms ease-in-out;
-                        }
-                        &:hover{
-                            img{
-                                box-shadow: 0px 0px 0px 15px rgba(255,255,255,0.2);
-                            }
-                            
-                        }
-                    }
-                    
-                    span{
-                        margin-left: 30px;
-                        color: $white;
-                        font-size: 13px;
-                        font-style: italic;
-                        font-weight: 600;
-                    }
-                }
-            }
+            
             .hero-dec-bottom{
                 width: 80px;
                 height: 80px;
@@ -267,7 +274,7 @@ ul{
             transform: translateX(-50%);
             top: 0%;
             @include container;
-            padding: unset;
+            padding: 0 15px;
             position: relative;
             z-index: 15;
             .header-top{
@@ -276,6 +283,7 @@ ul{
                 align-items: center;
                 justify-content: space-between;
                 padding: 10px 0;
+                padding-bottom: 18px;
                 .language{
                     display: flex;
                     align-items: center;
@@ -336,7 +344,9 @@ ul{
             }
             .header-bottom{
                 transition: all 300ms ease;
-                padding-top: 8px;
+           
+                border: 1px solid $borderEEE;
+             
                 .header-bottom-inner{
                     background-color: $white;
                     position: relative;
@@ -464,7 +474,7 @@ ul{
                                     font-weight: 600;
                                     text-transform: uppercase;
                                     color: $blackText;
-                                    padding: 5px 11px;
+                                    padding: 5px 13px;
                                     transition: all 200ms ease;
                                   }
                                   
@@ -630,13 +640,14 @@ ul{
                             }
                             .show-cart-details{
                                 opacity: 1;
-                                z-index: 200;
+                                z-index: 900;
                                 right: -25px;  
+                                visibility: visible !important;
                             }
                             .hide-cart-details{
                                 opacity: 0;
-                                z-index: -200;
-                                
+                                z-index: -600;
+                                visibility: none !important;
                             }
                                 
                                 ul{
@@ -738,6 +749,33 @@ ul{
                                             font-family: 'Poppins', sans-serif ;
                                             img{
                                                 width: 20px;
+                                            }
+                                        }
+                                    }
+                                    .reservation{
+                                        position: relative;
+                                        z-index: 100;
+                                        a{
+                                            transition: all 300ms ease;
+                                        }
+                                        &::before{
+                                            position: absolute;
+                                            bottom: 0;
+                                            left: 0;
+                                            display: block;
+                                            content: '';
+                                            width:  calc(116px + 25px);
+                                            height: 0%;
+                                            background-color: $golden;
+                                            transition: all 200ms ease;
+                                            z-index: -100;
+                                        }
+                                        &:hover{
+                                            a{
+                                                color: white;
+                                            }
+                                            &::before{
+                                                height: 100%;
                                             }
                                         }
                                     }
