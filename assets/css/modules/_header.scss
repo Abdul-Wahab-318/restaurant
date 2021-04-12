@@ -492,7 +492,7 @@ ul{
                             .cart-details{
                                 border-top: 1px solid $borderEEE;
                                 opacity: 0;
-                                z-index: -200;
+                                z-index: -900;
                                 background-color: $white;
                                 width: 400px;
                                 height: 470px;
@@ -501,7 +501,7 @@ ul{
                                 bottom: 0;
                                 right: 0px;
                                 transform: translate(0%,+100%);
-                                transition: all 300ms ease;
+                                transition: all 300ms ease-in-out;
                                 .cart-details-top{
                                     padding-bottom: 20px;
                                     font-weight: 600;
@@ -524,11 +524,11 @@ ul{
                                     overflow-y: scroll;
                                     &::-webkit-scrollbar {
                                         width: 6px;
-                                        border-top: 3px solid white;
+                                        border-top: 3px solid transparent;
                                       }
                                   
                                       &::-webkit-scrollbar-thumb {
-                                        border-top: 10px solid white;
+                                        border-top: 10px solid transparent;
                                         background: $golden;
                                       }
                                     
@@ -639,15 +639,13 @@ ul{
                                 }
                             }
                             .show-cart-details{
-                                opacity: 1;
+                                display: block  !important;
                                 z-index: 900;
-                                right: -25px;  
-                                visibility: visible !important;
+                                animation: showCartDetails 300ms ease-in-out forwards;
                             }
                             .hide-cart-details{
-                                opacity: 0;
-                                z-index: -600;
-                                visibility: none !important;
+                                
+                                animation: hideCartDetails 300ms ease-in-out forwards;
                             }
                                 
                                 ul{

@@ -25,6 +25,50 @@
   }
 }
 
+@-webkit-keyframes showCartDetails {
+  from {
+    opacity: 0;
+    right: 0px;
+  }
+  to {
+    opacity: 1;
+    right: -25px;
+  }
+}
+
+@keyframes showCartDetails {
+  from {
+    opacity: 0;
+    right: 0px;
+  }
+  to {
+    opacity: 1;
+    right: -25px;
+  }
+}
+
+@-webkit-keyframes hideCartDetails {
+  from {
+    opacity: 1;
+    right: -25px;
+  }
+  to {
+    opacity: 0;
+    right: 0px;
+  }
+}
+
+@keyframes hideCartDetails {
+  from {
+    opacity: 1;
+    right: -25px;
+  }
+  to {
+    opacity: 0;
+    right: 0px;
+  }
+}
+
 * {
   font-family: 'Playfair Display', serif;
   margin: 0;
@@ -67,6 +111,7 @@ ul {
 .header .hero-dec-footer .container {
   max-width: 1239px;
   padding: 0 15px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -306,6 +351,7 @@ ul {
   position: unset !important;
   max-width: 1239px;
   padding: 0 15px;
+  margin: 0 auto;
   color: white;
 }
 
@@ -370,6 +416,7 @@ ul {
   top: 0%;
   max-width: 1239px;
   padding: 0 15px;
+  margin: 0 auto;
   padding: 0 15px;
   position: relative;
   z-index: 15;
@@ -699,7 +746,7 @@ ul {
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details {
   border-top: 1px solid #eee;
   opacity: 0;
-  z-index: -200;
+  z-index: -900;
   background-color: white;
   width: 400px;
   height: 470px;
@@ -709,8 +756,8 @@ ul {
   right: 0px;
   -webkit-transform: translate(0%, 100%);
           transform: translate(0%, 100%);
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .cart-details-top {
@@ -745,11 +792,11 @@ ul {
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .cart-item::-webkit-scrollbar {
   width: 6px;
-  border-top: 3px solid white;
+  border-top: 3px solid transparent;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .cart-details .cart-item::-webkit-scrollbar-thumb {
-  border-top: 10px solid white;
+  border-top: 10px solid transparent;
   background: #b19058;
 }
 
@@ -890,16 +937,15 @@ ul {
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .show-cart-details {
-  opacity: 1;
+  display: block  !important;
   z-index: 900;
-  right: -25px;
-  visibility: visible !important;
+  -webkit-animation: showCartDetails 300ms ease-in-out forwards;
+          animation: showCartDetails 300ms ease-in-out forwards;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .hide-cart-details {
-  opacity: 0;
-  z-index: -600;
-  visibility: none !important;
+  -webkit-animation: hideCartDetails 300ms ease-in-out forwards;
+          animation: hideCartDetails 300ms ease-in-out forwards;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header ul {
@@ -1066,6 +1112,23 @@ ul {
           transform: translateY(-52px);
 }
 
+.story {
+  position: relative;
+  z-index: 000;
+}
+
+.story .section-padding {
+  padding: 140px 0px;
+}
+
+.story .section-padding .story-inner {
+  max-width: 1239px;
+  padding: 0 15px;
+  margin: 0 auto;
+  color: red;
+  height: 100vh;
+}
+
 @media (min-width: 1200px) and (max-width: 1568px) {
   .hero-social {
     display: none;
@@ -1218,6 +1281,7 @@ ul {
   .header .hero-dec-footer .container {
     max-width: 1239px;
     padding: 0 15px;
+    margin: 0 auto;
     padding: 0 30px;
   }
   .header .brush-bottom {
@@ -1328,6 +1392,7 @@ ul {
   .header .hero-dec-footer .container {
     max-width: 1239px;
     padding: 0 15px;
+    margin: 0 auto;
     padding: 0 30px;
   }
 }
@@ -1558,6 +1623,7 @@ ul {
   }
   .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header .show-cart-details {
     display: block !important;
+    right: -10px !important;
   }
   .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header ul {
     margin-left: 0px;

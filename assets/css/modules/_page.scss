@@ -1,0 +1,12 @@
+.story{
+    position: relative;
+    z-index: 000;
+    .section-padding{
+        @include section-padding;
+        .story-inner{
+            @include container;
+            color: red;
+            height: 100vh;
+        }
+    }
+}

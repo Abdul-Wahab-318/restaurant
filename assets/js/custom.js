@@ -13,12 +13,13 @@ let cartParent = document.querySelector('#cartParent');
 let hoverCart = document.querySelector('#hoverCart');
 let cartDetails = document.querySelector('#cartDetails');
 function toggleCartDetails(){
-    console.log('clickable')
-    videoBtn.classList.toggle('d-none');
+    console.log('cart details')
+    cartDetails.classList.toggle('hide-cart-details');
     cartDetails.classList.toggle('show-cart-details');
     hoverCart.style.display='none';
     setTimeout(function(){
         hoverCart.style.display='block';
+        cartDetails.classList.toggle('d-none');
     },300)
 }
 cartParent.addEventListener('click',function(){

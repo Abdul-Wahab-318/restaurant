@@ -15,6 +15,7 @@ $heroSocial: rgba(255,255,255,0.1);
 @mixin container {
     max-width: 1239px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 @mixin hero-overlay {
     position: absolute;
@@ -28,6 +29,10 @@ $heroSocial: rgba(255,255,255,0.1);
 @mixin font-second {
     font-family: 'Poppins', sans-serif ;
 }
+@mixin section-padding {
+    padding: 140px 0px;
+}
+
 
 /*animation*/
 @keyframes mouseScroll {
@@ -38,5 +43,25 @@ $heroSocial: rgba(255,255,255,0.1);
     to{
         transform: translate(-50%, 10px);
         opacity: 0;
+    }
+}
+@keyframes showCartDetails {
+    from{
+        opacity: 0;
+        right: 0px;
+    }
+    to{
+        opacity: 1;
+        right: -25px;
+    }
+}
+@keyframes hideCartDetails {
+    from{
+        opacity: 1;
+        right: -25px;
+    }
+    to{
+        opacity: 0;
+        right: 0px;
     }
 }
