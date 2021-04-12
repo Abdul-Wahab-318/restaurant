@@ -18,9 +18,15 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+  
     /*HEADER __------HEADER --__------HEADER -----HEADER*/
     .header{
-   
+        .hero-dec-footer{
+            .container{
+                padding: 0 30px;
+            }
+            
+        }
         .header-inner{
             .hero-overlay{
                 .hero-social{
@@ -34,6 +40,7 @@
                 }
                 .hero-caption-parent{
                     .container{
+                        padding: 0 30px;
                         h4{
                             font-size: 15px;
                         }
@@ -54,7 +61,7 @@
                 }
             }
             .container{
-                
+                padding: 0 30px;
                 .header-top{
                     padding: 10px 0;
 

@@ -131,3 +131,47 @@ function createIframe(){
     video.appendChild(ifrm);
     console.log('creating iframe');
 }
+
+
+// STORY - SECTION   - CUBE TRANSLATE ONSCROLL
+var cube = document.querySelector('#cube');
+var wave = document.querySelector('#wave');
+function isInViewPort(elem)
+{
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+
+window.addEventListener('scroll',function(){
+    //cube function
+    if (isInViewPort(cube)) {
+        console.log('In the viewport! cube');
+        var scrolled = window.scrollY;
+        setTimeout(function(){
+            cube.style.transform = `translateY(${scrolled/6}px)`;
+        },1000)
+
+    } else {
+        console.log('Not in the viewport cube... whomp whomp');
+    }
+    // cube function end 
+
+    if (isInViewPort(wave)) {
+        console.log('In the viewport! wave');
+        var scrolled = window.scrollY;
+        setTimeout(function(){
+            wave.style.transform = `translateY(${-scrolled/6}px)`;
+        },1000)
+
+    } else {
+        console.log('Not in the viewport wave... whomp whomp');
+    }
+
+
+});

@@ -69,6 +69,24 @@
   }
 }
 
+@-webkit-keyframes opacity-0to1 {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-0to1 {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   font-family: 'Playfair Display', serif;
   margin: 0;
@@ -1114,7 +1132,43 @@ ul {
 
 .story {
   position: relative;
+  overflow: hidden;
   z-index: 000;
+}
+
+.story .top-left-dec-dot {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  background-color: transparent;
+  border-left: 1px dotted #b19058;
+  border-top: 1px dotted #b19058;
+}
+
+.story .float-cube {
+  position: absolute;
+  top: -70px;
+  z-index: 00;
+  left: 43%;
+  width: 90px;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.story .float-wave {
+  position: absolute;
+  bottom: 70px;
+  z-index: 00;
+  left: 9%;
+  width: 90px;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 
 .story .section-padding {
@@ -1125,8 +1179,116 @@ ul {
   max-width: 1239px;
   padding: 0 15px;
   margin: 0 auto;
-  color: red;
-  height: 100vh;
+}
+
+.story .section-padding .story-inner .story-lead-text h6 {
+  color: #C19D60;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.story .section-padding .story-inner .story-lead-text h6::before {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  background-color: transparent;
+  border-left: 1px dotted #b19058;
+  border-top: 1px dotted #b19058;
+}
+
+.story .section-padding .story-inner .story-lead-text h1 {
+  color: #323246;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.story .section-padding .story-inner .story-lead-text h1::after {
+  position: absolute;
+  display: block;
+  content: '......';
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #333;
+}
+
+.story .section-padding .story-inner .story-lead-text p {
+  font-family: 'Poppins', sans-serif;
+  color: #5e646a;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.story .section-padding .story-inner .story-lead-text a {
+  width: 205px;
+  height: 45px;
+  background-color: #292929;
+  color: white;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.story .section-padding .story-inner .story-lead-text a img {
+  position: relative;
+  width: 13px;
+  margin-left: 30px;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.story .section-padding .story-inner .story-lead-text a:hover {
+  background-color: #b19058;
+}
+
+.story .section-padding .story-inner .story-lead-text a:hover img {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+.story .section-padding .story-inner .story-lead-text :nth-child(4) {
+  margin-bottom: 40px;
+}
+
+.story .section-padding .story-inner .story-img {
+  position: relative;
+}
+
+.story .section-padding .story-inner .story-img img:first-child {
+  -webkit-box-shadow: -3px 10px 12px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: -3px 10px 12px 2px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.story .section-padding .story-inner .story-img :last-child {
+  width: 380px;
+  position: absolute;
+  z-index: -100;
+  right: -50%;
+  top: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
 }
 
 @media (min-width: 1200px) and (max-width: 1568px) {
@@ -1147,6 +1309,9 @@ ul {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /*HEADER __------HEADER --__------HEADER -----HEADER*/
+  .header .hero-dec-footer .container {
+    padding: 0 30px;
+  }
   .header .header-inner .hero-overlay .hero-social {
     display: none;
   }
@@ -1155,6 +1320,9 @@ ul {
   }
   .header .header-inner .hero-overlay .hero-dec-bottom {
     display: none;
+  }
+  .header .header-inner .hero-overlay .hero-caption-parent .container {
+    padding: 0 30px;
   }
   .header .header-inner .hero-overlay .hero-caption-parent .container h4 {
     font-size: 15px;
@@ -1171,6 +1339,9 @@ ul {
   .header .header-inner .hero-overlay .hero-caption-parent .container .click-menu i {
     margin-left: 30px;
     margin-bottom: 3px;
+  }
+  .header .header-inner .container {
+    padding: 0 30px;
   }
   .header .header-inner .container .header-top {
     padding: 10px 0;
