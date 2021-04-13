@@ -160,6 +160,50 @@
                 }
             }
             /*Story-SECTION END END END- _------- STORY END END END  */
+
+        // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
+        .reservations{
+            .reservations-inner{
+                .row{
+                    .chef-quote-parent{
+                        .chef-quote-inner{
+                            padding: 100px 140px;
+                        }
+                    }
+                    .opening-parent{     
+                        .opening{  
+                            .opening-inner{
+                                .opening-caption{
+                                    width: 100%;
+                                    padding: 50px 0;
+                          
+                                    .opening-hours{
+                                        .row{
+                                            .col-sm-6{
+                                                ul{
+                                                    margin-right: 140px;
+                                                }
+
+                                            }
+                                            :last-child{
+                                                ul{
+                                                    margin-right: unset ;
+                                                    margin-left: 140px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //RESERVATION END ----_--- RESERVATION END --__
+
+
+
         }
     }
     
@@ -325,6 +369,49 @@
                 }
             }
             /*Story-SECTION END END END- _------- STORY END END END  */
+
+
+                    // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
+        .reservations{
+            .reservations-inner{
+                .row{
+                    .chef-quote-parent{
+                        .chef-quote-inner{
+                            padding: 100px 100px;
+                        }
+                    }
+                    .opening-parent{     
+                        .opening{  
+                            .opening-inner{
+                                .opening-caption{
+                                    width: 100%;
+                                    padding: 50px 0;
+                          
+                                    .opening-hours{
+                                        .row{
+                                            .col-sm-6{
+                                                ul{
+                                                    margin-right: 100px;
+                                                }
+
+                                            }
+                                            :last-child{
+                                                ul{
+                                                    margin-right: unset;
+                                                    margin-left: 100px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //RESERVATION END ----_--- RESERVATION END --__
+            
         }
     }
 
@@ -487,6 +574,49 @@
                 }
             }
             /*Story-SECTION END END END- _------- STORY END END END  */
+
+        // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
+        .reservations{
+            .reservations-inner{
+                .row{
+                    .chef-quote-parent{
+                        .chef-quote-inner{
+                            padding: 100px 40px;
+                        }
+                    }
+                    .opening-parent{     
+                        .opening{  
+                            .opening-inner{
+                                .opening-caption{
+                                    width: 100%;
+                                    padding: 50px 0;
+                          
+                                    .opening-hours{
+                                        .row{
+                                            .col-sm-6{
+                                                ul{
+                                                    margin-right: 50px;
+                                                }
+
+                                            }
+                                            :last-child{
+                                                ul{
+                                                    margin-right: unset ;
+                                                    margin-left: 50px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //RESERVATION END ----_--- RESERVATION END --__
+
+
         }
     }
  }
@@ -837,6 +967,85 @@
                 }
             }
             /*Story-SECTION END END END- _------- STORY END END END  */
+
+                    // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
+        .reservations{
+            .reservations-inner{
+                .row{
+                    .chef-quote-parent{
+                        .chef-quote-inner{
+                            padding: 60px 20px;
+                        }
+                    }
+                    .opening-parent{     
+                        .opening{  
+                            padding: 20px;
+                            .opening-inner{
+                                box-shadow: 0px 0px 0px 20px rgba(54, 54, 54, 0.5);
+                                .opening-caption{
+                                    width: 100%;
+                                    padding: 50px 0;
+                          
+                                    .opening-hours{
+                                        .row{
+                                            .col-sm-6{
+                                                ul{
+                                                    margin: 0 auto ;
+                                                    margin-bottom: 30px;
+                                                    :last-child{
+                                                        &::after{
+                                                            display: none;
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+                                            :last-child{
+                                                ul{
+                                                    margin: 0 auto;
+                                                }
+                                            }
+                                            &::before{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    .hotel-number{
+                                        position: relative;
+                                        &::before{
+                                            position: absolute;
+                                            display: block;
+                                            content: '';
+                                            top: -52px;
+                                            width: 70px;
+                                            left: 30px;
+                                            height: 1px;
+                                            opacity: 0.6;
+                                            background-color: $golden;
+                                        }
+                                        &::after{
+                                            position: absolute;
+                                            display: block;
+                                            content: '';
+                                            top: -52px;
+                                            width: 70px;
+                                            right: 30px;
+                                            height: 1px;
+                                            opacity: 0.6;
+                                            background-color: $golden;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //RESERVATION END ----_--- RESERVATION END --__
+
+
+            
         }
     }
 }
