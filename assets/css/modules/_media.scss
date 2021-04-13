@@ -71,6 +71,17 @@
                         }
                     }
                 }
+                .header-bottom{
+                    .header-bottom-inner{
+                        .navbar{
+                            .navbar-brand{
+                                img{
+                                    width: 125px;
+                                }
+                            }
+                        }
+                    }
+                }
                 .hide-hBottom{     
                     transform: translateY(-44px);
                 }
@@ -82,6 +93,76 @@
             }
         }
     }
+    /*HEADER-END_-------HEADER-END HEADER-END_--*/
+
+    /*MAIN START --_---- MAIN MAIN   */
+
+    .main{
+        .main-inner{
+              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
+            .story{
+
+                .float-cube{
+                    top: -70px;
+                    left: 43%;
+                    width: 70px ;
+                }
+                .float-wave{
+                    bottom: 70px;
+                    left: 40px;
+                    width: 50px ;
+                }
+                .section-padding{
+                    @include section-padding;
+                    .story-inner{
+                        @include container;
+                        padding: 0 30px;
+                        .story-lead-text{
+                            h6{
+        
+                                font-size: 18px;
+                                margin-bottom: 12px;
+                                &::before{
+                                    @include top-left-dec-dot;
+                                }
+                            }
+                            h1{
+                                font-size: 30px;
+                                margin-bottom: 60px;
+                                &::after{
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    letter-spacing: 3px;
+                                }
+                            }
+                            p{
+                                font-size: 13px;
+                                font-weight: 500;
+                                line-height: 23px;
+                                 
+                            }
+                            
+                            a{
+                                @include generic-btn;
+                            }
+                            :nth-child(4){
+                                margin-bottom: 40px;
+                            }
+                        }
+                        .story-img{
+                            position: relative;
+                            img:first-child{
+                                box-shadow: -3px 10px 12px 2px rgba($color: #000000, $alpha: 0.2);
+                                z-index: 100;
+                            }
+                        }
+                    }
+                }
+            }
+            /*Story-SECTION END END END- _------- STORY END END END  */
+        }
+    }
+    
  }
 
 
@@ -168,10 +249,7 @@
                                         padding: 10px 0;
                                     }
                                     .dropdown-menu{
-                                        background-color: $blackText;
-                                        .dropdown-item{
-                                            color: $white !important;
-                                        }
+                                        margin-bottom: 50px;
                                     }
                                 }
                             }
@@ -212,6 +290,45 @@
         }
         
     }
+    /*HEADER-END_-------HEADER-END HEADER-END_--*/
+
+    /*MAIN START --_---- MAIN MAIN   */
+
+    .main{
+        .main-inner{
+              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
+            .story{
+                .section-padding{
+                    @include section-padding;
+                    .story-inner{
+                        @include container;
+                        padding: 0 30px;
+                        .story-lead-text{
+                  
+                            
+                            a{
+                                @include generic-btn;
+                                margin-bottom: 30px;
+                            }
+                            :nth-child(4){
+                                margin-bottom: 40px;
+                            }
+                        }
+                        .story-img{
+                            position: relative;
+                            img:first-child{
+                                box-shadow: -3px 10px 12px 2px rgba($color: #000000, $alpha: 0.2);
+                                z-index: 100;
+                            }
+                        }
+                    }
+                }
+            }
+            /*Story-SECTION END END END- _------- STORY END END END  */
+        }
+    }
+
+
  }
 
 
@@ -300,7 +417,7 @@
                                         padding: 10px 0;
                                     }
                                     .dropdown-menu{
-                                        background-color: $blackText;
+                                        margin-bottom: 50px;
                                         .dropdown-item{
                                             color: $white !important;
                                         }
@@ -337,6 +454,39 @@
                 @include container;
                 padding:  0 30px;   
             }
+        }
+    }
+    .main{
+        .main-inner{
+              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
+            .story{
+                .section-padding{
+                    @include section-padding;
+                    .story-inner{
+                        @include container;
+                        padding: 0 30px;
+                        .story-lead-text{
+                  
+                            
+                            a{
+                                @include generic-btn;
+                                margin-bottom: 30px;
+                            }
+                            :nth-child(4){
+                                margin-bottom: 40px;
+                            }
+                        }
+                        .story-img{
+                            position: relative;
+                            img:first-child{
+                                box-shadow: -3px 10px 12px 2px rgba($color: #000000, $alpha: 0.2);
+                                z-index: 100;
+                            }
+                        }
+                    }
+                }
+            }
+            /*Story-SECTION END END END- _------- STORY END END END  */
         }
     }
  }
@@ -423,8 +573,9 @@
                                 background-color: $blackText;
                                 position: absolute;
                                 top: 69px;
-                                right: 0;
-                                width: 50%;
+                                right: 0%;
+                      
+                                width: 100%;
                                 padding: 20px 40px;
                                 .nav-item{
                                     .nav-link{
@@ -432,18 +583,16 @@
                                         padding: 10px 0;
                                     }
                                     .dropdown-menu{
-                                        background-color: $blackText;
-                                        .dropdown-item{
-                                            color: $white !important;
-                                        }
+                                        margin-bottom: 40px;
+                                        
                                     }
                                 }
                             }
                             .show-collapse{
                                 display: block;
-                                z-index: 100;
+                                z-index: 900;
                                 opacity: 1;
-                                
+                                left: 0;
                             }
                             .hide-collapse{
                                 display: none;
@@ -639,6 +788,44 @@
                     transform: translateY(0px);
                 }
             }
+        }
+    }
+    .main{
+        .main-inner{
+              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
+            .story{
+                .section-padding{
+                    @include section-padding;
+                    .story-inner{
+                        @include container;
+                        padding: 0 30px;
+
+                        .story-lead-text{
+                            h1{
+                                font-size: 25px   ;
+                                margin-bottom: 40px
+                            }
+                            
+                            a{
+                                @include generic-btn;
+                                margin-bottom: 30px;
+                            }
+                            :nth-child(4){
+                                margin-bottom: 40px;
+                            }
+                        }
+                        .story-img{
+                            padding: unset;
+                            position: relative;
+                            img:first-child{
+                                box-shadow: -3px 10px 12px 2px rgba($color: #000000, $alpha: 0.2);
+                                z-index: 100;
+                            }
+                        }
+                    }
+                }
+            }
+            /*Story-SECTION END END END- _------- STORY END END END  */
         }
     }
 }
