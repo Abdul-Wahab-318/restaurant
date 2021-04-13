@@ -794,6 +794,17 @@
         .main-inner{
               /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
             .story{
+                .float-cube{
+                    top: -50px;
+                    img{
+                        width: 90px;
+                    }
+                }
+                .float-wave{
+                    img{
+                        width: 70px;
+                    }
+                }
                 .section-padding{
                     @include section-padding;
                     .story-inner{

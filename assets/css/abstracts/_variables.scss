@@ -73,7 +73,18 @@ $heroSocial: rgba(255,255,255,0.1);
     border-left: 1px dotted $golden;
     border-top: 1px dotted $golden;
 }
-
+@mixin heading-dots {
+    position: absolute;
+    display: block;
+    content: '......';
+    letter-spacing: 3px;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $blackText;
+    font-weight: 500;
+    font-size: 20px;
+}
 /*animation*/
 @keyframes mouseScroll {
     from{

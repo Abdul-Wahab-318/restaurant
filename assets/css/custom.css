@@ -1475,6 +1475,256 @@ ul {
           transform: translate(-40%, -50%);
 }
 
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 1300px;
+  background-position: center;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 200px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote {
+  text-align: center;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote img {
+  margin-bottom: 20px;
+  width: 40px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote p {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  line-height: 28px;
+  margin-bottom: 60px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote .chef-signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote .chef-signature h6 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-right: 40px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote .chef-signature img {
+  width: 150px;
+  margin-bottom: 0;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: #303030;
+  background-repeat: no-repeat;
+  background-size: 990px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner {
+  -webkit-box-shadow: 0px 0px 0px 50px rgba(54, 54, 54, 0.5);
+          box-shadow: 0px 0px 0px 50px rgba(54, 54, 54, 0.5);
+  background-color: rgba(41, 41, 41, 0.8);
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgba(167, 167, 167, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption {
+  width: 100%;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-heading {
+  text-align: center;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-heading h6 {
+  color: #b19058;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-heading h2 {
+  margin-bottom: 60px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-heading h2::after {
+  position: absolute;
+  display: block;
+  content: '......';
+  letter-spacing: 3px;
+  bottom: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #222222;
+  font-weight: 500;
+  font-size: 20px;
+  color: #b19058;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row {
+  position: relative;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row .col-sm-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row .col-sm-6 ul {
+  margin-right: 70px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row .col-sm-6 ul :first-child {
+  color: #b19058;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  position: relative;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row .col-sm-6 ul :nth-child(2) {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row .col-sm-6 ul :last-child {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row .col-sm-6 ul :last-child::after {
+  position: absolute;
+  display: block;
+  content: '';
+  bottom: -60px;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  background-color: #b19058;
+  opacity: 0.5;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row :last-child {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row :last-child ul {
+  margin-right: unset;
+  margin-left: 70px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row::before {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  display: block;
+  content: 'xxxxxxxxxxxx';
+  letter-spacing: 1px;
+  opacity: 0.7;
+  left: 50%;
+  top: 50%;
+  color: #b19058;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row:after {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -63px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .hotel-number {
+  width: 255px;
+  font-size: 29px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid #b19058;
+  padding: 6px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 110px auto 0 auto;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .hotel-number:hover {
+  color: #b19058;
+}
+
 @media (min-width: 1200px) and (max-width: 1568px) {
   .hero-social {
     display: none;
@@ -2258,6 +2508,15 @@ ul {
   .main .main-inner {
     /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
     /*Story-SECTION END END END- _------- STORY END END END  */
+  }
+  .main .main-inner .story .float-cube {
+    top: -50px;
+  }
+  .main .main-inner .story .float-cube img {
+    width: 90px;
+  }
+  .main .main-inner .story .float-wave img {
+    width: 70px;
   }
   .main .main-inner .story .section-padding {
     padding: 140px 0px;

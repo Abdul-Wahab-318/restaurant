@@ -178,5 +178,202 @@
                 }
             }
         }
+        //story end end story end
+        .reservations{
+            .reservations-inner{
+                .row{
+                    .chef-quote-parent{
+                        position: relative;
+                        background-repeat:  no-repeat;
+                        background-size: 1300px;
+                        background-position: center;
+                        .chef-quote-inner{
+                            background-color: rgba($color: #000000, $alpha: 0.5);
+                            padding: 200px 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .chef-quote{
+                                text-align: center;
+                                img{
+                                    margin-bottom: 20px;
+                                    width: 40px;
+                                }
+                                p{
+                                    font-size: 15px;
+                                    text-align: center;
+                                    color: $white;
+                                    line-height: 28px;
+                                    margin-bottom: 60px;
+                                }
+                                .chef-signature{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                    h6{
+                                        color:$white;
+                                        @include font-second;
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        margin-bottom: 0;
+                                        margin-right: 40px;
+                                    }
+                                    img{
+                                        width: 150px;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                                
+                            
+                            }
+                        }
+                    }
+                    .opening-parent{
+                        
+                        .opening{
+                            width: 100%;
+                            height: 100%;
+                            padding: 50px ;
+                            background-color: rgba(48, 48, 48, 01);
+                            background-repeat: no-repeat;
+                            background-size: 990px;
+                            
+                            .opening-inner{
+                                box-shadow: 0px 0px 0px 50px rgba(54, 54, 54, 0.5);
+                                background-color: rgba(41, 41, 41, 0.8);
+                                width: 100%;
+                                height: 100%;
+                                border: 1px dashed rgba(167, 167, 167, 0.5);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .opening-caption{
+                                    width: 100%;
+                                    .opening-heading{
+                                        text-align: center;
+                                        h6{
+                                            color:  $golden;
+                                            font-size: 20px;
+                                            font-style: italic;
+                                            margin-bottom: 12px;
+                                        }
+                                        h2{
+                                            margin-bottom: 60px;
+                                            color : $white;
+                                            font-weight: 700;
+                                            position: relative;
+                                            &::after{
+                                                @include heading-dots;
+                                                color: $golden;
+                                            }
+                                        }
+                                    }
+                                    .opening-hours{
+                                        .row{
+                                            position: relative;
+                                            .col-sm-6{
+                                                display: flex;
+                                                justify-content: flex-end;
+                                                ul{
+                                                    margin-right: 70px;
+                                                    :first-child{
+                                                        color: $golden;
+                                                        @include font-second;
+                                                        font-size: 13px;
+                                                        position: relative;
+                                                 
+                                                    }
+                                                    :nth-child(2){
+                                                        margin-top: 10px;
+                                                        text-align: center;
+                                                        font-size: 30px;
+                                                        @include font-second;
+                                                        color: $white;
+                                                        font-weight: 600;
+                                                    }
+                                                    :last-child{
+                                                        margin-top: 5px;
+                                                        text-align: center;
+                                                        font-size: 30px;
+                                                        @include font-second;
+                                                        color: $white;
+                                                        font-weight: 600;
+                                                        position: relative;
+                                                        &::after{
+                                                            position: absolute;
+                                                            display: block;
+                                                            content: '';
+                                                            bottom: -60px;
+                                                            width: 100%;
+                                                            left: 50%;
+                                                            transform: translateX(-50%);
+                                                            height: 1px;
+                                                            background-color:  $golden;
+                                                            opacity: 0.5;
+                                                        }
+                                                    }
+                                                        
+                                                    
+                                                }
+
+                                            }
+                                            :last-child{
+                                                justify-content: flex-start;
+                                                ul{
+                                                    margin-right: unset;
+                                                    margin-left: 70px;
+                                                }
+                                            }
+                                            &::before{
+                                                @include font-second;
+                                                position: absolute;
+                                                display: block;
+                                                content: 'xxxxxxxxxxxx';
+                                                letter-spacing: 1px;
+                                                opacity: 0.7;
+                                                left: 50%;
+                                                top: 50%;
+                                                color: $golden;
+                                                text-transform: uppercase;
+                                                transform:  translate(-50%,-50%)  rotate(90deg);
+                                                
+                                            }
+                                            &:after{
+                                                width: 7px;
+                                                height: 7px;
+                                                border-radius: 50%;
+                                                display: block;
+                                                content: '';
+                                                position: absolute;
+                                                bottom: -63px;
+                                                left: 50%;
+                                                transform: translateX(-50%);
+                                                background-color: $white;
+                                            }
+                                        }
+                                    }
+                                    .hotel-number{
+                                        width: 255px;
+                                        font-size: 29px;
+                                        font-weight: 600;
+                                        color:  $white;
+                                        border: 1px solid $golden;
+                                        padding: 6px 20px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 110px auto 0 auto;
+                                        transition: all 400ms ease-in-out;
+                                        &:hover{
+                                            color: $golden;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
