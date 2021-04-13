@@ -155,7 +155,7 @@ window.addEventListener('scroll',function(){
         var scrolled = window.scrollY;
         setTimeout(function(){
             cube.style.transform = `translateY(${scrolled/6}px)`;
-        },1000)
+        },600)
 
     } else {
         console.log('Not in the viewport cube... whomp whomp');
@@ -167,7 +167,7 @@ window.addEventListener('scroll',function(){
         var scrolled = window.scrollY;
         setTimeout(function(){
             wave.style.transform = `translateY(${-scrolled/6}px)`;
-        },1000)
+        },600)
 
     } else {
         console.log('Not in the viewport wave... whomp whomp');

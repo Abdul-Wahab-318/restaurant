@@ -482,6 +482,30 @@ ul{
                             .active a{
                                 color: $golden !important ;
                             }
+                            .navbar-nav{
+                                .dropdown{
+                                    .dropdown-menu{
+                                        border-radius:  unset;
+                                        border: 1px solid $borderEEE;
+                                        top: 100%;
+                                        transform: translate(0%,+18px);
+                                        background-clip: unset;
+                                        a{
+                                            @include font-second;
+                                            font-size: 13px;
+                                            font-weight: 500;
+                                            padding-right: 10px;
+                                            text-transform: uppercase;
+                                            color: $blackText !important;
+                                            transition:  all 200ms ease;
+                                            &:hover{
+                                                background-color: unset;
+                                                color: $golden !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                             
                         }
                         
@@ -671,7 +695,7 @@ ul{
                                                 height: 50px;
                                                 line-height: 50px;
                                                 border: 1px solid #eee;
-                                                border-top: 0;
+                                               // border-top: 0;
                                                 p{
                                                     font-family: 'Playfair Display';
                                                     text-align: center;
@@ -720,7 +744,6 @@ ul{
                                             height: 50px;
                                             line-height: 50px;
                                             border: 1px solid #eee;
-                                            border-top: 0;
                                             p{
                                                 font-family: 'Playfair Display';
                                                 text-align: center;
