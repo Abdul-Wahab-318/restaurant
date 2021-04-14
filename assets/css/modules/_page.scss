@@ -378,5 +378,250 @@
             }
         }
         //RESERVATION END ----_--- RESERVATION END --__
+
+        //SERVICE SECTION SERVICE SECTION ---_------ SERVICE SECTION____
+
+        .service{
+            position: relative;
+            .section-padding{
+                @include section-padding;
+                .service-inner{
+                    @include container;
+                    .lead-text{
+                        @include lead-text;
+                        margin-bottom: 60px;
+                    }
+                    .service-details{
+                        .row{
+                            position: relative;
+                            &::before{
+                                @include top-left-dec-dot;
+                              
+                            }
+                            &::after{
+                                @include bottom-right-dec-dot;
+                                bottom: -70px;
+                                right: -70px;
+                                border-bottom: 1px dotted $golden ;
+                                border-right: 1px dotted $golden ;
+                                width: 60px;
+                                height: 60px;
+                                opacity: 1;
+                              
+                            }
+                            .col-md-4{
+                                &:hover .flip{
+                                    transform: rotateY(-180deg);
+                                    
+                                }
+                                .flip{
+                                    width: 100%;
+                                    height: 100%;
+                                    transition:  .9s cubic-bezier(0.54, -0.81, 0.49, 1.85); //cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                                    transform-style: preserve-3d;
+                                    perspective:  1000px;
+                                    position: relative;
+                                    .service-front{
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        z-index: 100;
+                                        .service-front-inner{
+                                            
+                                            .service-details-inner{
+                                                position: relative;
+                                                .service-details-caption{
+                                                    
+                                                    position: absolute;
+                                                    top: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    right: 0;
+                                                    background-color: rgba(0, 0, 0, 0.4);
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    flex-direction: column;
+                                                    h5{
+                                                        color:  $white;
+                                                        font-size: 20px;
+                                                        font-weight: 600;
+                                                        position: relative;
+                                                        transform: translateZ(90px);
+                                                        &::before{
+                                                            transform: translateZ(0px);
+                                                            position: absolute;
+                                                            top: -30px;
+                                                            left: 50%;
+                                                            transform: translate(-50%,0);
+                                                            display: block;
+                                                            content: '';
+                                                            width: 50px;
+                                                            height: 2px;
+                                                            background-color:  $golden2;
+                                                        }
+                                                        
+                                                    }
+                                                    h6{
+                                                        margin-top: 20px;
+                                                        font-size: 13px;
+                                                        @include font-second;
+                                                        letter-spacing: 2px;
+                                                        text-transform:  uppercase;
+                                                        color:  $white;
+                                                        opacity: 0.8;
+                                                        transform: translateZ(90px) scale(0.8);
+                                                    }
+                                                
+                                                }
+                                                .top-left-dec-dot{
+                                                    @include top-left-dec-dot;
+                                                    width: 50px;
+                                                    height: 50px;
+                                                    top: 20px;
+                                                    left: 20px;
+                                                    border-top: 1px dotted $borderEEE;
+                                                    border-left: 1px dotted $borderEEE;
+                                                    opacity: 0.5;
+                                                }
+                                                .bottom-right-dec-dot{
+                                                    @include bottom-right-dec-dot;
+                                                }
+                                                .service-num{
+                                                    position: absolute;
+                                                    bottom: 20px;
+                                                    left: 25px;
+                                                    color: $white;
+                                                    font-size: 20px;
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                    .service-back{
+                                        transform: rotateY(180deg);
+
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        z-index: 10;
+                                        background-color: $btnBlack;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        .service-back-caption{
+                                            position: relative;
+                                            padding: 40px 40px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items:  center;
+                                            flex-direction: column;
+                                            img{
+                                                width: 70px;
+                                                position: relative;
+     
+                                            }
+                                            &::after{
+                                                position: absolute;
+                                                display: block;
+                                                content: '';
+                                                width: 60px;
+                                                height: 10px;
+                                                border-radius: 16px;
+                                                background-color: $borderEEE;
+                                                opacity: 0.1;
+                                                top: 40px;
+                                                left: 32%;
+                                                z-index: 100;
+                                            }
+                                            &::before{
+                                                position: absolute;
+                                                display: block;
+                                                content: '';
+                                                width: 60px;
+                                                height: 10px;
+                                                border-radius: 16px;
+                                                background-color: $borderEEE;
+                                                opacity: 0.1;
+                                                top: 110px;
+                                                left: 50%;
+                                                z-index: 100;
+                                            }
+                                            p{
+                                                text-align: center;
+                                                @include font-second;
+                                                font-size: 13px;
+                                                color: $white;
+                                                line-height: 22px;
+                                                margin-top: 50px;
+                                                position: relative;
+                                                &::after{
+                                                    display: block;
+                                                    position: absolute;
+                                                    content: '...';
+                                                    letter-spacing: 3px;
+                                                    font-size: 20px;
+                                                    font-weight: 600;
+                                                    bottom: -75px;
+                                                    left: 50%;
+                                                    transform: translateX(-50%);
+                                                    color:  $golden;
+                                                }
+                                            }
+                                        }
+                                    }
+                           
+                                }
+                                
+                                
+                                
+                            }
+                        }
+                        .generic-btn{
+                            @include generic-btn;
+                            margin: 50px auto;
+                            color: $blackText;
+                            font-weight: 800;
+                            font-size: 12px;
+                            background-color: $sharebg;
+                            border: 1px solid $golden;
+                            i{
+                                &::before{
+                                    color: $blackText;
+                                }
+                                
+                            }
+                            &:hover{
+                                color: $white;
+                                i{
+                                    &::before{
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .float-cube{
+                @include float-cube;
+                left: unset;
+                right: 26%;
+                top: unset;
+                bottom: 220px;
+                height: 120px;
+                img{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+
+
+
     }
 }

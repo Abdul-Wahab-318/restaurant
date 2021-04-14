@@ -136,6 +136,8 @@ function createIframe(){
 // STORY - SECTION   - CUBE TRANSLATE ONSCROLL
 var cube = document.querySelector('#cube');
 var wave = document.querySelector('#wave');
+var cube2 = document.querySelector('#cube2');
+
 function isInViewPort(elem)
 {
     var bounding = elem.getBoundingClientRect();
@@ -149,7 +151,7 @@ function isInViewPort(elem)
 
 
 window.addEventListener('scroll',function(){
-    //cube function
+    //cube1 function
     if (isInViewPort(cube)) {
         console.log('In the viewport! cube');
         var scrolled = window.scrollY;
@@ -157,11 +159,17 @@ window.addEventListener('scroll',function(){
             cube.style.transform = `translateY(${scrolled/6}px)`;
         },600)
 
-    } else {
-        console.log('Not in the viewport cube... whomp whomp');
-    }
-    // cube function end 
+    } 
+    if (isInViewPort(cube2)) {
+        console.log('In the viewport! cube2');
+        var scrolled = window.scrollY;
+        setTimeout(function(){
+            cube2.style.transform = `translateY(${scrolled/12}px)`;
+        },200)
 
+    }
+    // cube1 function end 
+    //wave function
     if (isInViewPort(wave)) {
         console.log('In the viewport! wave');
         var scrolled = window.scrollY;
@@ -169,9 +177,7 @@ window.addEventListener('scroll',function(){
             wave.style.transform = `translateY(${-scrolled/6}px)`;
         },600)
 
-    } else {
-        console.log('Not in the viewport wave... whomp whomp');
-    }
-
+    } 
+    //wave function end
 
 });
