@@ -153,6 +153,7 @@ ul{
     .header-inner{
         position: relative;
         height: 100vh;
+        background-position: center;
         .hero-overlay{
             @include hero-overlay;
             overflow: hidden;

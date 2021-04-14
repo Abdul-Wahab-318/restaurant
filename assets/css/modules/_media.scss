@@ -974,7 +974,19 @@
                 .row{
                     .chef-quote-parent{
                         .chef-quote-inner{
-                            padding: 60px 20px;
+                            padding: 60px 10px;
+                            .chef-quote
+                            {
+                                .chef-signature
+                                {
+                                    h6{
+                                        margin-right: 10px;
+                                    }
+                                    img{
+                                        width: 120px;
+                                    }
+                                } 
+                            } 
                         }
                     }
                     .opening-parent{     
@@ -1012,6 +1024,9 @@
                                     }
                                     .hotel-number{
                                         position: relative;
+                                        font-size: 25px;
+                                        width: 220px;
+                                        padding-bottom: 10px;
                                         &::before{
                                             position: absolute;
                                             display: block;

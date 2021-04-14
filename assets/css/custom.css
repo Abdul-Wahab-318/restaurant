@@ -278,6 +278,7 @@ ul {
 .header .header-inner {
   position: relative;
   height: 100vh;
+  background-position: center;
 }
 
 .header .header-inner .hero-overlay {
@@ -2619,7 +2620,13 @@ ul {
     z-index: 100;
   }
   .main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner {
-    padding: 60px 20px;
+    padding: 60px 10px;
+  }
+  .main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote .chef-signature h6 {
+    margin-right: 10px;
+  }
+  .main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote .chef-signature img {
+    width: 120px;
   }
   .main .main-inner .reservations .reservations-inner .row .opening-parent .opening {
     padding: 20px;
@@ -2647,6 +2654,9 @@ ul {
   }
   .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .hotel-number {
     position: relative;
+    font-size: 25px;
+    width: 220px;
+    padding-bottom: 10px;
   }
   .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .hotel-number::before {
     position: absolute;
