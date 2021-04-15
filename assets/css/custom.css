@@ -1754,10 +1754,12 @@ ul {
 
 .main .main-inner .service {
   position: relative;
+  background-size: 1900px;
+  background-repeat: no-repeat;
 }
 
 .main .main-inner .service .section-padding {
-  padding: 140px 0px;
+  padding: 100px 0px;
 }
 
 .main .main-inner .service .section-padding .service-inner {
@@ -1977,6 +1979,8 @@ ul {
 .main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1996,6 +2000,12 @@ ul {
 }
 
 .main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: relative;
   padding: 40px 40px;
   display: -webkit-box;
@@ -2047,12 +2057,14 @@ ul {
 }
 
 .main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption p {
+  -webkit-transform: translateZ(95px) scale(0.81);
+          transform: translateZ(95px) scale(0.81);
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   color: white;
   line-height: 22px;
-  margin-top: 50px;
+  margin-top: 35px;
   position: relative;
 }
 
@@ -2087,7 +2099,7 @@ ul {
           justify-content: center;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   color: #222222;
   font-weight: 800;
   font-size: 12px;
@@ -2156,6 +2168,13 @@ ul {
 .main .main-inner .service .float-cube img {
   width: 120px;
   height: 120px;
+}
+
+.main .main-inner .service .brush-bottom {
+  position: absolute;
+  bottom: -1px;
+  bottom: -60px;
+  z-index: 10;
 }
 
 @media (min-width: 1200px) and (max-width: 1568px) {

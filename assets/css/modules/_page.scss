@@ -383,8 +383,10 @@
 
         .service{
             position: relative;
+            background-size: 1900px;
+            background-repeat: no-repeat;
             .section-padding{
-                @include section-padding;
+                @include small-section-padding;
                 .service-inner{
                     @include container;
                     .lead-text{
@@ -426,6 +428,7 @@
                                         width: 100%;
                                         height: 100%;
                                         z-index: 100;
+                                        
                                         .service-front-inner{
                                             
                                             .service-details-inner{
@@ -500,7 +503,7 @@
                                     }
                                     .service-back{
                                         transform: rotateY(180deg);
-
+                                        perspective: 1000px;
                                         position: absolute;
                                         top: 0;
                                         left: 0;
@@ -513,6 +516,9 @@
                                         align-items: center;
 
                                         .service-back-caption{
+                                            transform-style: preserve-3d;
+                                            perspective: 1000px;
+                                            backface-visibility: hidden;
                                             position: relative;
                                             padding: 40px 40px;
                                             display: flex;
@@ -551,12 +557,13 @@
                                                 z-index: 100;
                                             }
                                             p{
+                                                transform: translateZ(95px) scale(0.81) ;
                                                 text-align: center;
                                                 @include font-second;
                                                 font-size: 13px;
                                                 color: $white;
                                                 line-height: 22px;
-                                                margin-top: 50px;
+                                                margin-top: 35px;
                                                 position: relative;
                                                 &::after{
                                                     display: block;
@@ -582,7 +589,7 @@
                         }
                         .generic-btn{
                             @include generic-btn;
-                            margin: 50px auto;
+                            margin: 50px auto 0 auto;
                             color: $blackText;
                             font-weight: 800;
                             font-size: 12px;
@@ -618,6 +625,12 @@
                     width: 120px;
                     height: 120px;
                 }
+            }
+            .brush-bottom{
+                @include brush-bottom;
+                //transform: rotateX(180deg);
+                bottom: -60px;
+                z-index: 10;
             }
         }
 

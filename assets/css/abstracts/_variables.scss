@@ -36,6 +36,9 @@ $heroSocial: rgba(255,255,255,0.1);
 @mixin section-padding {
     padding: 140px 0px;
 }
+@mixin small-section-padding {
+    padding: 100px 0px;
+}
 @mixin generic-btn {
     width: 205px;
     height: 45px;
@@ -105,6 +108,11 @@ $heroSocial: rgba(255,255,255,0.1);
     width: 120px ;
     transition: all 600ms ease-in-out;
     z-index: -100;
+}
+@mixin brush-bottom {
+    position: absolute;
+    bottom: -1px;
+
 }
 @mixin heading-dots {
     position: absolute;
