@@ -385,8 +385,10 @@
             position: relative;
             background-size: 1900px;
             background-repeat: no-repeat;
+            background-position: bottom left;
             .section-padding{
                 @include small-section-padding;
+                overflow: hidden;
                 .service-inner{
                     @include container;
                     .lead-text{
@@ -411,7 +413,7 @@
                                 opacity: 1;
                               
                             }
-                            .col-md-4{
+                            .col-xl-4{
                                 &:hover .flip{
                                     transform: rotateY(-180deg);
                                     
@@ -628,12 +630,14 @@
             }
             .brush-bottom{
                 @include brush-bottom;
-                //transform: rotateX(180deg);
-                bottom: -60px;
+
                 z-index: 10;
+
+                background-position: 0px;
             }
         }
 
+        //SERVICE SECTION END SERVICE SECTION END 
 
 
     }

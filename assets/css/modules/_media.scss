@@ -203,6 +203,107 @@
         //RESERVATION END ----_--- RESERVATION END --__
 
 
+        //SERVICE SECTION SERVICE SECTION ---_------ SERVICE SECTION____
+
+        .service{
+                    background-image:  none !important;
+                    .section-padding{
+                        .service-inner{
+                            padding: 0 30px;
+                            .lead-text{
+                                margin-bottom: 60px;
+                            }
+                            .service-details{
+                                .row{
+                                    position: relative;
+                                    &::before{
+                                        display: none;
+                                      
+                                    }
+                                    &::after{
+                                        display: none;
+                                      
+                                    }
+                                    .col-xl-4{
+                                        margin: 12px 0;
+                                        height: 400px;
+                                        &:hover .flip{
+                                            transform: rotateY(-180deg);
+
+                                        }
+                                        .flip{
+                                            width: 100%;
+                                            height: 100%;
+                                            .service-front{
+                                                position: relative;
+                                                width: 100%;
+                                                height: 100%;
+                                                z-index: 100;
+                                                
+                                                .service-front-inner{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    .service-details-inner{
+                                                        position: relative;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        img{
+                                                            display: none;
+                                                        }
+                                                        .service-details-caption{
+                                                            background-color: rgba($color: $blackText, $alpha: 1);
+                                                        
+                                                        }
+                          
+
+                                                    }
+                                                }
+                                                
+                                            }
+                                            .service-back{
+                                                backface-visibility: hidden;
+                                                width: 100%;
+                                                height: 100%;
+        
+                                                .service-back-caption{
+
+                                                    img{
+                                                        width: 70px;
+                                                        position: relative;
+             
+                                                    }
+                                                    p{
+                                                        &::after{
+                                                            bottom: -95px;
+                                                        }
+                                                    }
+                                                    &::after{
+                                                        top: 44px;
+                                                        left: 39%;
+                                                    }
+                                                    &::before{
+                                                        top: 110px;
+                                                        left: 50%;
+                                                    }
+                                                }
+
+                                            }
+                                   
+                                        }
+                                        
+                                        
+                                        
+                                    }
+                                }
+        
+                            }
+                        }
+                    }
+
+        }
+        
+        //SERVICE SECTION END SERVICE SECTION END 
+
 
         }
     }
@@ -340,7 +441,7 @@
 
     .main{
         .main-inner{
-              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
+              /* STORY STORY STORY  */
             .story{
                 .section-padding{
                     @include section-padding;
@@ -368,11 +469,11 @@
                     }
                 }
             }
-            /*Story-SECTION END END END- _------- STORY END END END  */
+            /* STORY STORY STORY  */
 
 
-                    // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
-        .reservations{
+            // RESERVATION RESERVATION RESERVATION
+            .reservations{
             .reservations-inner{
                 .row{
                     .chef-quote-parent{
@@ -409,8 +510,114 @@
                     }
                 }
             }
-        }
-        //RESERVATION END ----_--- RESERVATION END --__
+            }
+            // RESERVATION RESERVATION RESERVATION
+
+
+            //SERVICE SERVICE SERVICE
+
+            .service{
+            background-image:  none !important;
+            .section-padding{
+                .service-inner{
+                    padding: 0 30px;
+                    .lead-text{
+                        margin-bottom: 60px;
+                    }
+                    .service-details{
+                        .row{
+                            position: relative;
+                            &::before{
+                                display: none;
+                              
+                            }
+                            &::after{
+                                display: none;
+                              
+                            }
+                            .col-xl-4{
+                                margin: 12px 0;
+                                height: 400px;
+                                &:hover .flip{
+                                    transform: rotateY(-180deg);
+
+                                }
+                                .flip{
+                                    width: 100%;
+                                    height: 100%;
+                                    .service-front{
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        z-index: 100;
+                                        
+                                        .service-front-inner{
+                                            width: 100%;
+                                            height: 100%;
+                                            .service-details-inner{
+                                                position: relative;
+                                                width: 100%;
+                                                height: 100%;
+                                                img{
+                                                    display: none;
+                                                }
+                                                .service-details-caption{
+                                                    background-color: rgba($color: $blackText, $alpha: 1);
+                                                
+                                                }
+                  
+
+                                            }
+                                        }
+                                        
+                                    }
+                                    .service-back{
+                                        backface-visibility: hidden;
+                                        width: 100%;
+                                        height: 100%;
+
+                                        .service-back-caption{
+
+                                            img{
+                                                width: 70px;
+                                                position: relative;
+     
+                                            }
+                                            p{
+                                                &::after{
+                                                    bottom: -95px;
+                                                }
+                                            }
+                                            &::after{
+                                                top: 44px;
+                                                left: 39%;
+                                            }
+                                            &::before{
+                                                top: 110px;
+                                                left: 50%;
+                                            }
+                                        }
+
+                                    }
+                           
+                                }
+                                
+                                
+                                
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            }
+
+            //SERVICE SERVICE SERVICE 
+
+
+
+
             
         }
     }
@@ -545,8 +752,8 @@
     }
     .main{
         .main-inner{
-              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
-            .story{
+        /* STORY STORY STORY  */
+        .story{
                 .section-padding{
                     @include section-padding;
                     .story-inner{
@@ -572,10 +779,10 @@
                         }
                     }
                 }
-            }
-            /*Story-SECTION END END END- _------- STORY END END END  */
+        }
+        /* STORY STORY STORY  */
 
-        // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
+        // RESERVATION RESERVATION RESERVATION
         .reservations{
             .reservations-inner{
                 .row{
@@ -614,7 +821,107 @@
                 }
             }
         }
-        //RESERVATION END ----_--- RESERVATION END --__
+        // RESERVATION RESERVATION RESERVATION
+
+
+        //SERVICE SERVICE SERVICE
+        .service{
+                        background-image:  none !important;
+                        .section-padding{
+                            .service-inner{
+                                padding: 0 30px;
+                                .lead-text{
+                                    margin-bottom: 60px;
+                                }
+                                .service-details{
+                                    .row{
+                                        position: relative;
+                                        &::before{
+                                            display: none;
+                                          
+                                        }
+                                        &::after{
+                                            display: none;
+                                          
+                                        }
+                                        .col-xl-4{
+                                            margin: 12px 0;
+                                            height: 400px;
+                                            &:hover .flip{
+                                                transform: rotateY(-180deg);
+            
+                                            }
+                                            .flip{
+                                                width: 100%;
+                                                height: 100%;
+                                                .service-front{
+                                                    position: relative;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    z-index: 100;
+                                                    
+                                                    .service-front-inner{
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        .service-details-inner{
+                                                            position: relative;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            img{
+                                                                display: none;
+                                                            }
+                                                            .service-details-caption{
+                                                                background-color: rgba($color: $blackText, $alpha: 1);
+                                                            
+                                                            }
+                              
+            
+                                                        }
+                                                    }
+                                                    
+                                                }
+                                                .service-back{
+                                                    backface-visibility: hidden;
+                                                    width: 100%;
+                                                    height: 100%;
+            
+                                                    .service-back-caption{
+            
+                                                        img{
+                                                            width: 70px;
+                                                            position: relative;
+                 
+                                                        }
+                                                        p{
+                                                            &::after{
+                                                                bottom: -95px;
+                                                            }
+                                                        }
+                                                        &::after{
+                                                            top: 44px;
+                                                            left: 39%;
+                                                        }
+                                                        &::before{
+                                                            top: 110px;
+                                                            left: 50%;
+                                                        }
+                                                    }
+            
+                                                }
+                                       
+                                            }
+                                            
+                                            
+                                            
+                                        }
+                                    }
+            
+                                }
+                            }
+                        }
+            
+        } 
+        //SERVICE SERVICE SERVICE 
 
 
         }
@@ -922,8 +1229,8 @@
     }
     .main{
         .main-inner{
-              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
-            .story{
+        // STORY STORY STORY
+        .story{
                 .float-cube{
                     top: -50px;
                     img{
@@ -965,10 +1272,10 @@
                         }
                     }
                 }
-            }
-            /*Story-SECTION END END END- _------- STORY END END END  */
+        }
+        // STORY STORY STORY
 
-                    // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
+        // RESERVATION RESERVATION RESERVATION
         .reservations{
             .reservations-inner{
                 .row{
@@ -1057,8 +1364,121 @@
                 }
             }
         }
-        //RESERVATION END ----_--- RESERVATION END --__
+        // RESERVATION RESERVATION RESERVATION
 
+
+        //SERVICE SERVICE SERVICE
+        .service{
+                    background-image:  none !important;
+                    .section-padding{
+                        .service-inner{
+                            padding: 0 30px;
+                            .lead-text{
+                                margin-bottom: 50px;
+                                @include lead-text-xs;
+                            }
+                            .service-details{
+                                .row{
+                                    position: relative;
+                                    &::before{
+                                        display: none;
+                                      
+                                    }
+                                    &::after{
+                                        display: none;
+                                      
+                                    }
+                                    .col-xl-4{
+                                        margin: 12px 0;
+                                        height: 400px;
+                                        padding: 0;
+                                        &:hover .flip{
+                                            transform: rotateY(-180deg);
+        
+                                        }
+                                        .flip{
+                                            width: 100%;
+                                            height: 100%;
+                                            .service-front{
+                                                position: relative;
+                                                width: 100%;
+                                                height: 100%;
+                                                z-index: 100;
+                                                
+                                                .service-front-inner{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    .service-details-inner{
+                                                        position: relative;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        img{
+                                                            display: none;
+                                                        }
+                                                        .service-details-caption{
+                                                            background-color: rgba($color: $blackText, $alpha: 1);
+                                                            h5{
+                                                                font-size: 17px;
+                                                                &::before{
+                                                                    width: 40px;
+                                                                }
+                                                            }
+                                                            h6{
+                                                                margin-top: 10px;
+                                                                font-size: 12px;
+                                                            }
+                                                        }
+                                                        .service-num{
+                                                            font-size: 18px;
+                                                        }
+                          
+        
+                                                    }
+                                                }
+                                                
+                                            }
+                                            .service-back{
+                                                backface-visibility: hidden;
+                                                width: 100%;
+                                                height: 100%;
+        
+                                                .service-back-caption{
+        
+                                                    img{
+                                                        width: 70px;
+                                                        position: relative;
+             
+                                                    }
+                                                    p{
+                                                        &::after{
+                                                            bottom: -75px;
+                                                        }
+                                                    }
+                                                    &::after{
+                                                        top: 44px;
+                                                        left: 31%;
+                                                    }
+                                                    &::before{
+                                                        top: 110px;
+                                                        left: 50%;
+                                                    }
+                                                }
+        
+                                            }
+                                   
+                                        }
+                                        
+                                        
+                                        
+                                    }
+                                }
+        
+                            }
+                        }
+                    }
+        
+        } 
+        //SERVICE SERVICE SERVICE 
 
             
         }

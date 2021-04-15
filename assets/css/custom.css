@@ -1756,10 +1756,12 @@ ul {
   position: relative;
   background-size: 1900px;
   background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 .main .main-inner .service .section-padding {
   padding: 100px 0px;
+  overflow: hidden;
 }
 
 .main .main-inner .service .section-padding .service-inner {
@@ -1844,12 +1846,12 @@ ul {
   opacity: 1;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4:hover .flip {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4:hover .flip {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip {
   width: 100%;
   height: 100%;
   -webkit-transition: 0.9s cubic-bezier(0.54, -0.81, 0.49, 1.85);
@@ -1861,18 +1863,18 @@ ul {
   position: relative;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front {
   position: relative;
   width: 100%;
   height: 100%;
   z-index: 100;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner {
   position: relative;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1894,7 +1896,7 @@ ul {
           flex-direction: column;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h5 {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h5 {
   color: white;
   font-size: 20px;
   font-weight: 600;
@@ -1903,7 +1905,7 @@ ul {
           transform: translateZ(90px);
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h5::before {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h5::before {
   -webkit-transform: translateZ(0px);
           transform: translateZ(0px);
   position: absolute;
@@ -1918,7 +1920,7 @@ ul {
   background-color: #C19D60;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h6 {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h6 {
   margin-top: 20px;
   font-size: 13px;
   font-family: 'Poppins', sans-serif;
@@ -1930,7 +1932,7 @@ ul {
           transform: translateZ(90px) scale(0.8);
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner .top-left-dec-dot {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .top-left-dec-dot {
   display: block;
   content: '';
   width: 60px;
@@ -1952,7 +1954,7 @@ ul {
   opacity: 0.5;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner .bottom-right-dec-dot {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .bottom-right-dec-dot {
   display: block;
   content: '';
   width: 50px;
@@ -1968,7 +1970,7 @@ ul {
   opacity: 0.5;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-front .service-front-inner .service-details-inner .service-num {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-num {
   position: absolute;
   bottom: 20px;
   left: 25px;
@@ -1976,7 +1978,7 @@ ul {
   font-size: 20px;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   -webkit-perspective: 1000px;
@@ -1999,7 +2001,7 @@ ul {
           align-items: center;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 1000px;
@@ -2023,12 +2025,12 @@ ul {
           flex-direction: column;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption img {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption img {
   width: 70px;
   position: relative;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption::after {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::after {
   position: absolute;
   display: block;
   content: '';
@@ -2042,7 +2044,7 @@ ul {
   z-index: 100;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption::before {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::before {
   position: absolute;
   display: block;
   content: '';
@@ -2056,7 +2058,7 @@ ul {
   z-index: 100;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption p {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption p {
   -webkit-transform: translateZ(95px) scale(0.81);
           transform: translateZ(95px) scale(0.81);
   text-align: center;
@@ -2068,7 +2070,7 @@ ul {
   position: relative;
 }
 
-.main .main-inner .service .section-padding .service-inner .service-details .row .col-md-4 .flip .service-back .service-back-caption p::after {
+.main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption p::after {
   display: block;
   position: absolute;
   content: '...';
@@ -2172,9 +2174,11 @@ ul {
 
 .main .main-inner .service .brush-bottom {
   position: absolute;
-  bottom: -1px;
-  bottom: -60px;
+  bottom: -45px;
+  width: 100%;
+  height: 45px;
   z-index: 10;
+  background-position: 0px;
 }
 
 @media (min-width: 1200px) and (max-width: 1568px) {
@@ -2370,6 +2374,78 @@ ul {
     margin-right: unset;
     margin-left: 140px;
   }
+  .main .main-inner .service {
+    background-image: none !important;
+  }
+  .main .main-inner .service .section-padding .service-inner {
+    padding: 0 30px;
+  }
+  .main .main-inner .service .section-padding .service-inner .lead-text {
+    margin-bottom: 60px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row {
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::before {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::after {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 {
+    margin: 12px 0;
+    height: 400px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4:hover .flip {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner img {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption {
+    background-color: #222222;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption img {
+    width: 70px;
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption p::after {
+    bottom: -95px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::after {
+    top: 44px;
+    left: 39%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::before {
+    top: 110px;
+    left: 50%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -2474,8 +2550,8 @@ ul {
   /*HEADER-END_-------HEADER-END HEADER-END_--*/
   /*MAIN START --_---- MAIN MAIN   */
   .main .main-inner {
-    /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
-    /*Story-SECTION END END END- _------- STORY END END END  */
+    /* STORY STORY STORY  */
+    /* STORY STORY STORY  */
   }
   .main .main-inner .story .section-padding {
     padding: 140px 0px;
@@ -2554,6 +2630,78 @@ ul {
   .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row :last-child ul {
     margin-right: unset;
     margin-left: 100px;
+  }
+  .main .main-inner .service {
+    background-image: none !important;
+  }
+  .main .main-inner .service .section-padding .service-inner {
+    padding: 0 30px;
+  }
+  .main .main-inner .service .section-padding .service-inner .lead-text {
+    margin-bottom: 60px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row {
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::before {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::after {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 {
+    margin: 12px 0;
+    height: 400px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4:hover .flip {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner img {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption {
+    background-color: #222222;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption img {
+    width: 70px;
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption p::after {
+    bottom: -95px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::after {
+    top: 44px;
+    left: 39%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::before {
+    top: 110px;
+    left: 50%;
   }
 }
 
@@ -2662,8 +2810,8 @@ ul {
     padding: 0 30px;
   }
   .main .main-inner {
-    /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
-    /*Story-SECTION END END END- _------- STORY END END END  */
+    /* STORY STORY STORY  */
+    /* STORY STORY STORY  */
   }
   .main .main-inner .story .section-padding {
     padding: 140px 0px;
@@ -2742,6 +2890,78 @@ ul {
   .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row :last-child ul {
     margin-right: unset;
     margin-left: 50px;
+  }
+  .main .main-inner .service {
+    background-image: none !important;
+  }
+  .main .main-inner .service .section-padding .service-inner {
+    padding: 0 30px;
+  }
+  .main .main-inner .service .section-padding .service-inner .lead-text {
+    margin-bottom: 60px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row {
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::before {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::after {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 {
+    margin: 12px 0;
+    height: 400px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4:hover .flip {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner img {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption {
+    background-color: #222222;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption img {
+    width: 70px;
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption p::after {
+    bottom: -95px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::after {
+    top: 44px;
+    left: 39%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::before {
+    top: 110px;
+    left: 50%;
   }
 }
 
@@ -3032,10 +3252,6 @@ ul {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
-  .main .main-inner {
-    /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
-    /*Story-SECTION END END END- _------- STORY END END END  */
-  }
   .main .main-inner .story .float-cube {
     top: -50px;
   }
@@ -3174,6 +3390,119 @@ ul {
     height: 1px;
     opacity: 0.6;
     background-color: #b19058;
+  }
+  .main .main-inner .service {
+    background-image: none !important;
+  }
+  .main .main-inner .service .section-padding .service-inner {
+    padding: 0 30px;
+  }
+  .main .main-inner .service .section-padding .service-inner .lead-text {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .main .main-inner .service .section-padding .service-inner .lead-text h6 {
+    color: #C19D60;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .main .main-inner .service .section-padding .service-inner .lead-text h1 {
+    color: #323246;
+    font-size: 23px;
+    font-weight: 700;
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .lead-text h1::after {
+    position: absolute;
+    display: block;
+    content: '......';
+    letter-spacing: 3px;
+    bottom: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: #222222;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row {
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::before {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row::after {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 {
+    margin: 12px 0;
+    height: 400px;
+    padding: 0;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4:hover .flip {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner {
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner img {
+    display: none;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption {
+    background-color: #222222;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h5 {
+    font-size: 17px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h5::before {
+    width: 40px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-details-caption h6 {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-front .service-front-inner .service-details-inner .service-num {
+    font-size: 18px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption img {
+    width: 70px;
+    position: relative;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption p::after {
+    bottom: -75px;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::after {
+    top: 44px;
+    left: 31%;
+  }
+  .main .main-inner .service .section-padding .service-inner .service-details .row .col-xl-4 .flip .service-back .service-back-caption::before {
+    top: 110px;
+    left: 50%;
   }
 }
 /*# sourceMappingURL=custom.css.map */

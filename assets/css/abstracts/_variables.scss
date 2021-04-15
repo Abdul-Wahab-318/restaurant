@@ -111,7 +111,9 @@ $heroSocial: rgba(255,255,255,0.1);
 }
 @mixin brush-bottom {
     position: absolute;
-    bottom: -1px;
+    bottom: -45px;
+    width: 100%;
+    height: 45px;
 
 }
 @mixin heading-dots {
@@ -139,6 +141,26 @@ $heroSocial: rgba(255,255,255,0.1);
     h1{
         color: $blackText2;
         font-size: 30px;
+        font-weight: 700;
+        position:  relative;
+        &::after{
+            @include lead-text-dots;
+        }
+    }
+}
+@mixin lead-text-xs {
+    text-align: center;
+    h6{
+        
+        color:  $golden2;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    h1{
+        color: $blackText2;
+        font-size: 23px;
         font-weight: 700;
         position:  relative;
         &::after{

@@ -73,6 +73,7 @@
 }
 .icon-instagram-1:before {
   content: "\e900";
+  color: #fff;
 }
 .icon-twitter:before {
   content: "\e901";
