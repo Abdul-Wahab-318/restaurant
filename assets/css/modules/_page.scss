@@ -379,7 +379,7 @@
         }
         //RESERVATION END ----_--- RESERVATION END --__
 
-        //SERVICE SECTION SERVICE SECTION ---_------ SERVICE SECTION____
+        //SERVICE SECTION SERVICE SECTION - SERVICE SECTION
 
         .service{
             position: relative;
@@ -639,6 +639,117 @@
 
         //SERVICE SECTION END SERVICE SECTION END 
 
+
+        // SPECIAL MENU SPECIAL --  SPECIAL MENU
+        .special-menu{
+            .section-padding{
+                padding: 120px 0px;
+                background-color: rgba($color: #000000, $alpha: 0.7);
+                .special-menu-inner{
+                    @include container;
+                    .lead-text{
+                        @include lead-text;
+                        h1{
+                            color: white;
+                            &::after{
+                                color: $golden;
+                            }
+                        }
+                    }
+                    .special-menu-tab{
+                        margin-top: 100px;
+                        .row{
+                            .col-xl-3{
+                                border-right: 1px $heroGray dotted;
+                                padding: 20px 15px;
+                                .active{
+                                    background-color: unset;
+                                    color: $golden !important;
+                                    position: relative;
+                                    &::after{
+                                        display: block;
+                                        content: '';
+                                        position: absolute;
+                                        right: 10px;
+                                        top: 50%;
+                                        transform: translate(0,-50%);
+                                        width: 0; 
+                                        height: 0; 
+                                        border-top: 5px solid transparent;
+                                        border-bottom: 5px solid transparent; 
+                                        
+                                        border-right:5px solid $golden; 
+
+                                    }
+                                }
+                                .nav-link{
+                                    color:  $white;
+                                    font-size: 18px;
+                                    margin: 6px 0;
+                                    transition: all 300ms ease-in-out;
+                                    &:hover{
+                                        color:  $golden;
+                                    }
+                                    span{
+                                        font-size: 11px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                            .col-xl-9{
+                                .tab-content-inner{
+                                    margin-top: 34px;
+                                    padding-left: 34px;
+                                    .dish{
+                                        display: flex;
+                                        .dish-num{
+                                            color:  $golden;
+                                            font-size: 15px;
+                                            font-weight: 600;
+                                            margin-right: 20px
+                                        }
+                                        .dish-content{
+                                            width: 80%;
+                                            padding-left: 20px;
+                                            h5{
+                                                @include font-second;
+                                                color:  $white;
+                                                font-weight: 500;
+                                                font-size: 17px;
+                                                position: relative;
+                                                &::after{
+                                                    display: block;
+                                                    content: '';
+                                                    position:  absolute;
+                                                    width: 75%;
+                                                    height: 0;
+                                                    border-top: 1px $blackSmallText dotted;
+                                                    bottom: 20%;
+                                                    right: 0;
+                                                    transform: translateY(-50%)
+                                                }
+                                            }
+                                            h6{
+                                                @include font-second;
+                                                color: rgba(255,255,255,0.8);
+                                                font-size: 13px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                        .dish-price{
+                                            color: $golden;
+                                            margin:  0 auto;
+                                            font-size: 18px;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
     }
 }
