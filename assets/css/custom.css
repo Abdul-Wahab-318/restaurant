@@ -2243,7 +2243,7 @@ ul {
 }
 
 .main .main-inner .special-menu .section-padding .special-menu-inner .special-menu-tab {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .main .main-inner .special-menu .section-padding .special-menu-inner .special-menu-tab .row .col-xl-3 {
@@ -2298,6 +2298,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .main .main-inner .special-menu .section-padding .special-menu-inner .special-menu-tab .row .col-xl-9 .tab-content-inner .dish .dish-num {

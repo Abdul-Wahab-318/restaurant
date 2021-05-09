@@ -663,7 +663,7 @@
                         }
                     }
                     .special-menu-tab{
-                        margin-top: 100px;
+                        margin-top: 80px;
                         .row{
                             .col-xl-3{
                                 border-right: 1px $heroGray dotted;
@@ -708,6 +708,7 @@
                                     padding-left: 34px;
                                     .dish{
                                         display: flex;
+                                        margin-bottom: 25px;
                                         .dish-num{
                                             color:  $golden;
                                             font-size: 15px;
