@@ -2181,6 +2181,15 @@ ul {
   background-position: 0px;
 }
 
+.main .main-inner .special-menu {
+  /*background-image:  url('../../../assets/img/menu/3.jpg');*/
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: repeat;
+  background-origin: content-box;
+}
+
 .main .main-inner .special-menu .section-padding {
   padding: 120px 0px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -2335,6 +2344,29 @@ ul {
   color: #b19058;
   margin: 0 auto;
   font-size: 18px;
+}
+
+.menuOverlayAnimation {
+  -webkit-animation: menuOverlay 800ms ease forwards;
+          animation: menuOverlay 800ms ease forwards;
+}
+
+@-webkit-keyframes menuOverlay {
+  30% {
+    background-color: black;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@keyframes menuOverlay {
+  30% {
+    background-color: black;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1568px) {

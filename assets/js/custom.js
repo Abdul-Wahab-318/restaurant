@@ -181,3 +181,48 @@ window.addEventListener('scroll',function(){
     //wave function end
 
 });
+
+
+//menu animation function
+let menuOverlay = document.querySelector('#menuOverlay');
+let specialMenu = document.querySelector('#specialMenu');
+
+function menuAnimation(image)
+{
+
+    menuOverlay.classList.toggle('menuOverlayAnimation');
+    setTimeout(()=>{
+        specialMenu.style.backgroundImage = image;
+    },300)
+    setTimeout(()=>{
+        menuOverlay.classList.toggle('menuOverlayAnimation');
+    } , 800)
+}
+
+let mainDish = document.querySelector('#v-pills-main-tab');
+mainDish.addEventListener('click',()=>{
+    menuAnimation("url(./assets/img/bg/special-menu.jpg)")
+})
+
+
+let starter = document.querySelector('#v-pills-starter-tab');
+starter.addEventListener('click', ()=>{
+    menuAnimation("url(./assets/img/menu/starter.jpg)");
+} );
+
+
+let dessert = document.querySelector('#v-pills-desserts-tab');
+dessert.addEventListener('click',()=>{
+    menuAnimation("url(./assets/img/menu/dessert.jpg)")
+})
+
+
+let seaFood = document.querySelector('#v-pills-sea-tab');
+seaFood.addEventListener('click',()=>{
+    menuAnimation("url(./assets/img/menu/seafood.jpg)");
+})
+
+let drinks = document.querySelector('#v-pills-drink-tab');
+drinks.addEventListener('click',()=>{
+    menuAnimation("url(./assets/img/menu/drinks.jpg)")
+})
