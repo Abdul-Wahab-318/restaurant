@@ -1007,14 +1007,14 @@ ul {
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header ul li:first-child:hover .hover-cart {
   opacity: 1;
-  z-index: 100;
+  visibility: visible;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header ul li:first-child .hover-cart {
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
   opacity: 0;
-  z-index: -300;
+  visibility: hidden;
   background-color: white;
   position: absolute;
   bottom: 0px;
@@ -1063,14 +1063,14 @@ ul {
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header ul li:nth-child(2):hover .hover-share {
   opacity: 1;
-  z-index: 100;
+  visibility: visible;
 }
 
 .header .header-inner .container .header-bottom .header-bottom-inner .navbar .cta-header ul li:nth-child(2) .hover-share {
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
   opacity: 0;
-  z-index: -300;
+  visibility: hidden;
   background-color: white;
   position: absolute;
   bottom: 0px;
@@ -2174,7 +2174,7 @@ ul {
 
 .main .main-inner .service .brush-bottom {
   position: absolute;
-  bottom: -45px;
+  bottom: -43px;
   width: 100%;
   height: 45px;
   z-index: 10;
@@ -2741,13 +2741,15 @@ ul {
   top: -45px;
   width: 100%;
   height: 45px;
+  background-image: url("../../../assets/img/dec/brush-dec.png");
 }
 
 .main .main-inner .team-parent .brush-bottom {
   position: absolute;
-  bottom: -45px;
+  bottom: -43px;
   width: 100%;
   height: 45px;
+  background-image: url("../../../assets/img/dec/brush-dec_2.png");
 }
 
 .menuOverlayAnimation {
@@ -2771,6 +2773,106 @@ ul {
   100% {
     background-color: rgba(0, 0, 0, 0.7);
   }
+}
+
+.footer {
+  padding: 100px 0 0 0;
+  background-color: #292929;
+}
+
+.footer .custom-container {
+  max-width: 1240px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer .custom-container .footer-inner .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-logo img {
+  width: 140px;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-logo .lang-select {
+  margin-left: 60px;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-logo .lang-select .active {
+  color: #b19058 !important;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-logo .lang-select span {
+  color: white;
+  margin: 0 4px;
+  font-size: 12px;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-logo .lang-select a {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons span {
+  color: white;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons a:nth-of-type(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons a:nth-of-type(3) {
+  border-right: none;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons a {
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  width: 36px;
+  height: 36px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons a i {
+  font-size: 13px;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons a i::before {
+  color: #b19058;
+}
+
+.footer .custom-container .footer-inner .footer-top .footer-social-icons a:hover {
+  background-color: white;
 }
 
 @media (min-width: 1200px) and (max-width: 1568px) {
@@ -3068,6 +3170,25 @@ ul {
   .main .main-inner .special-menu .section-padding .special-menu-inner .col-12 {
     padding-left: 34px;
   }
+  .main .main-inner .team-parent .custom-container {
+    padding: 0 30px;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards::before {
+    display: none;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner button {
+    margin-top: 30px;
+    margin-left: unset;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -3354,6 +3475,30 @@ ul {
   }
   .main .main-inner .special-menu .section-padding .special-menu-inner .col-12 {
     padding-left: 34px;
+  }
+  .main .main-inner .team-parent .custom-container {
+    padding: 0 30px;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards {
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards::before {
+    display: none;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner button {
+    margin-top: 30px;
+    margin-left: unset;
   }
 }
 
@@ -3654,6 +3799,30 @@ ul {
   }
   .main .main-inner .special-menu .section-padding .special-menu-inner .col-12 {
     padding-left: 0px;
+  }
+  .main .main-inner .team-parent .custom-container {
+    padding: 0 30px;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards {
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards::before {
+    display: none;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner button {
+    margin-top: 30px;
+    margin-left: unset;
   }
 }
 
@@ -4245,6 +4414,37 @@ ul {
   }
   .main .main-inner .special-menu .section-padding .special-menu-inner .col-12 {
     padding-left: 0px;
+  }
+  .main .main-inner .team-parent .custom-container {
+    padding: 0 30px;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards {
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards::before {
+    display: none;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards .team-card .team-img .team-img-overlay .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .team-cards .team-card .team-img .team-img-overlay .social-icons a i {
+    font-size: 12px;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .main-inner .team-parent .custom-container .team-inner .recipe-book-parent .recipe-book-inner button {
+    margin-top: 30px;
+    margin-left: unset;
   }
 }
 /*# sourceMappingURL=custom.css.map */

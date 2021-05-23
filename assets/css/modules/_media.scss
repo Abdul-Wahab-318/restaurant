@@ -8,6 +8,8 @@
     .hero-dec-bottom{
         display: none;
     }
+
+    
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -99,67 +101,68 @@
 
     .main{
         .main-inner{
-              /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
-            .story{
+            
+        /*Story-SECTION STORY-SECTION -STORY _------- STORY  */
+        .story{
 
-                .float-cube{
-                    top: -70px;
-                    left: 43%;
-                    width: 70px ;
-                }
-                .float-wave{
-                    bottom: 70px;
-                    left: 40px;
-                    width: 50px ;
-                }
-                .section-padding{
-                    @include section-padding;
-                    .story-inner{
-                        @include container;
-                        padding: 0 30px;
-                        .story-lead-text{
-                            h6{
-        
-                                font-size: 18px;
-                                margin-bottom: 12px;
-                                &::before{
-                                    @include top-left-dec-dot;
-                                }
-                            }
-                            h1{
-                                font-size: 30px;
-                                margin-bottom: 60px;
-                                &::after{
-                                    font-weight: 600;
-                                    font-size: 20px;
-                                    letter-spacing: 3px;
-                                }
-                            }
-                            p{
-                                font-size: 13px;
-                                font-weight: 500;
-                                line-height: 23px;
-                                 
-                            }
-                            
-                            a{
-                                @include generic-btn;
-                            }
-                            :nth-child(4){
-                                margin-bottom: 40px;
+            .float-cube{
+                top: -70px;
+                left: 43%;
+                width: 70px ;
+            }
+            .float-wave{
+                bottom: 70px;
+                left: 40px;
+                width: 50px ;
+            }
+            .section-padding{
+                @include section-padding;
+                .story-inner{
+                    @include container;
+                    padding: 0 30px;
+                    .story-lead-text{
+                        h6{
+    
+                            font-size: 18px;
+                            margin-bottom: 12px;
+                            &::before{
+                                @include top-left-dec-dot;
                             }
                         }
-                        .story-img{
-                            position: relative;
-                            img:first-child{
-                                box-shadow: -3px 10px 12px 2px rgba($color: #000000, $alpha: 0.2);
-                                z-index: 100;
+                        h1{
+                            font-size: 30px;
+                            margin-bottom: 60px;
+                            &::after{
+                                font-weight: 600;
+                                font-size: 20px;
+                                letter-spacing: 3px;
                             }
+                        }
+                        p{
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 23px;
+                                
+                        }
+                        
+                        a{
+                            @include generic-btn;
+                        }
+                        :nth-child(4){
+                            margin-bottom: 40px;
+                        }
+                    }
+                    .story-img{
+                        position: relative;
+                        img:first-child{
+                            box-shadow: -3px 10px 12px 2px rgba($color: #000000, $alpha: 0.2);
+                            z-index: 100;
                         }
                     }
                 }
             }
-            /*Story-SECTION END END END- _------- STORY END END END  */
+        }
+        /*Story-SECTION END END END- _------- STORY END END END  */
 
         // RESERVATION START -RESERVATION START_---- RESERVATION START -RESERVATION START_----
         .reservations{
@@ -339,6 +342,34 @@
             }
         }
 
+        //TEAM SECTION TEAM SECTION
+
+        .team-parent{
+            .custom-container{
+                padding: 0 30px;
+                .team-inner{
+                    .team-cards{
+                        &::before{
+                           display: none;
+                        }
+                    }
+                    .recipe-book-parent{
+                        .recipe-book-inner{
+                            align-items: flex-start;
+                            flex-direction: column;
+                            button{
+                                margin-top: 30px;
+                                margin-left: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //TEAM SECTION TEAM SECTION
+
 
         }
     }
@@ -476,7 +507,7 @@
 
     .main{
         .main-inner{
-              /* STORY STORY STORY  */
+            /* STORY STORY STORY  */
             .story{
                 .section-padding{
                     @include section-padding;
@@ -683,6 +714,37 @@
                     }
                 }
             }
+
+            
+            //TEAM SECTION TEAM SECTION
+
+            .team-parent{
+                .custom-container{
+                    padding: 0 30px;
+                    .team-inner{
+                        .team-cards{
+                            grid-template-columns: repeat(1, auto);
+                            &::before{
+                            display: none;
+                            }
+                        }
+                        .recipe-book-parent{
+                            .recipe-book-inner{
+                                width: 100%;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                button{
+                                    margin-top: 30px;
+                                    margin-left: unset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            //TEAM SECTION TEAM SECTION
 
 
             
@@ -1045,6 +1107,36 @@
                 }
             }
         }
+
+        //TEAM SECTION TEAM SECTION
+
+        .team-parent{
+            .custom-container{
+                padding: 0 30px;
+                .team-inner{
+                    .team-cards{
+                        grid-template-columns: repeat(1, auto);
+                        &::before{
+                        display: none;
+                        }
+                    }
+                    .recipe-book-parent{
+                        .recipe-book-inner{
+                            width: 100%;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            button{
+                                margin-top: 30px;
+                                margin-left: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //TEAM SECTION TEAM SECTION
 
         }
     }
@@ -1660,6 +1752,52 @@
             }
         }
         }      
+
+        
+        //TEAM SECTION TEAM SECTION
+
+        .team-parent{
+            .custom-container{
+                padding: 0 30px;
+                .team-inner{
+                    .team-cards{
+                        grid-template-columns: repeat(1, auto);
+                        &::before{
+                        display: none;
+                        }
+                        .team-card{
+                            .team-img{
+                                .team-img-overlay{
+                                    .social-icons{
+                                        a{
+                                            width: 30px;
+                                            height: 30px;
+                                            i{
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .recipe-book-parent{
+                        .recipe-book-inner{
+                            width: 100%;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            button{
+                                margin-top: 30px;
+                                margin-left: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        //TEAM SECTION TEAM SECTION
 
 
    

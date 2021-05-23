@@ -929,9 +929,11 @@
             }
             .brush-top{
                 @include brush-top;
+                background-image: url('../../../assets/img/dec/brush-dec.png')
             }
             .brush-bottom{
                 @include brush-bottom;
+                background-image: url('../../../assets/img/dec/brush-dec_2.png');
             }
         }
 

@@ -681,12 +681,12 @@ ul{
                                         position: relative;
                                         &:hover .hover-cart{
                                             opacity: 1;
-                                            z-index: 100;
+                                            visibility: visible;
                                         }
                                             .hover-cart{
                                                 transition: 300ms all ease;
                                                 opacity: 0;
-                                                z-index: -300 ;
+                                                visibility: hidden;
                                                 background-color: $white;
                                                 position: absolute;
                                                 bottom: 0px;
@@ -730,12 +730,12 @@ ul{
                                         position: relative;
                                         &:hover .hover-share{
                                             opacity: 1;
-                                            z-index: 100;
+                                            visibility:  visible;
                                         }
                                         .hover-share{
                                             transition: 300ms all ease;
                                             opacity: 0;
-                                            z-index: -300 ;
+                                            visibility: hidden;
                                             background-color: $white;
                                             position: absolute;
                                             bottom: 0px;
