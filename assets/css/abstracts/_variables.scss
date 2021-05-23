@@ -1,4 +1,5 @@
 $white: white;
+$black : #000000;
 $golden: #b19058;
 $golden2:  #C19D60;
 $blackText: #222222;
@@ -14,10 +15,10 @@ $borderEEE: #eee;
 $black111: #111;
 $sharebg: #f9f9f9;
 $heroSocial: rgba(255,255,255,0.1);
-
+$poppins : 'Poppins', sans-serif;
 /* MIX INS MIX INS*/
 @mixin container {
-    max-width: 1239px;
+    max-width: 1240px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -45,6 +46,72 @@ $heroSocial: rgba(255,255,255,0.1);
     background-color: $btnBlack;
     color: $white;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+    img{
+        position: relative;
+        width: 13px;
+        margin-left: 30px;
+        transition: all 800ms ease-in-out;
+    }
+    i{
+        position: relative;
+        font-size: 13px;
+        margin-left: 30px;
+        transition: all 800ms ease-in-out;
+    }
+    &:hover{
+        background-color: $golden;
+        img{
+            transform: rotateX(360deg);
+        }
+        i{
+            transform: rotateX(360deg);
+        }
+    }
+}
+@mixin primary-btn {
+    
+    padding: 11px 38px;
+    background-color: rgba(133, 133, 133, 0.2);
+    border: 1px solid $golden;
+    color: $white;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+    img{
+        position: relative;
+        width: 13px;
+        margin-left: 30px;
+        transition: all 800ms ease-in-out;
+    }
+    i{
+        position: relative;
+        font-size: 13px;
+        margin-left: 30px;
+        transition: all 800ms ease-in-out;
+    }
+    &:hover{
+        background-color: $white;
+        color: $blackSmallText;
+        img{
+            transform: rotateX(360deg);
+        }
+        i{
+            transform: rotateX(360deg);
+        }
+    }
+}
+@mixin primary-black-btn {
+    padding: 14px 20px 14px 35px;
+    background-color: $btnBlack;
+    color: $white;
+    font-size: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,12 +176,18 @@ $heroSocial: rgba(255,255,255,0.1);
     transition: all 600ms ease-in-out;
     z-index: -100;
 }
+@mixin brush-top {
+    position: absolute;
+    top: -45px;
+    width: 100%;
+    height: 45px;
+}
+
 @mixin brush-bottom {
     position: absolute;
     bottom: -45px;
     width: 100%;
     height: 45px;
-
 }
 @mixin heading-dots {
     position: absolute;
