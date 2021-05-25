@@ -370,6 +370,26 @@
 
         //TEAM SECTION TEAM SECTION
 
+        //FOOTER  FOOTER
+
+        .footer{
+            padding: 100px 0 0 0 ;
+            background-color: $btnBlack;
+            .custom-container{
+               padding: 0 30px;
+        
+                .footer-inner{
+                    .footer-mid{
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+
+
+        //FOOTER  FOOTER
+
+
 
         }
     }
@@ -746,6 +766,25 @@
 
             //TEAM SECTION TEAM SECTION
 
+
+            //FOOTER  FOOTER
+
+            .footer{
+                background-color: $btnBlack;
+                .custom-container{
+                padding: 0 30px;
+                    .footer-inner{
+                        .footer-mid{
+                            padding: 60px 0;
+                            gap: 40px;
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                }
+            }
+
+
+            //FOOTER  FOOTER
 
             
         }
@@ -1137,6 +1176,30 @@
 
 
         //TEAM SECTION TEAM SECTION
+
+        //FOOTER  FOOTER
+
+        .footer{
+            background-color: $btnBlack;
+            .custom-container{
+            padding: 0 30px;
+                .footer-inner{
+                    .footer-top{
+                        .footer-logo{
+                            
+                        }
+                    }
+                    .footer-mid{
+                        padding: 60px 0;
+                        gap: 40px;
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+        }
+
+
+        //FOOTER  FOOTER
 
         }
     }
@@ -1800,6 +1863,54 @@
         //TEAM SECTION TEAM SECTION
 
 
+        //FOOTER  FOOTER
+
+        .footer{
+            background-color: $btnBlack;
+            .custom-container{
+            padding: 0 30px;
+                .footer-inner{
+                    .footer-top{
+                        flex-direction: column;
+                        .footer-social-icons{
+                            margin-top: 20px;
+                        }
+                        .footer-logo{
+                            .lang-select{
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                    .footer-mid{
+                        padding: 50px 0;
+                        gap: 40px;
+                        grid-template-columns: 1fr;
+                        .footer-mid-col{
+                            ul{
+                                li{
+                                    span{
+                                        width: 50px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                padding: 20px 0;
+                .custom-container{
+                    flex-direction: column;
+                    .to-top-btn{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+
+        //FOOTER  FOOTER
    
         }
     }
