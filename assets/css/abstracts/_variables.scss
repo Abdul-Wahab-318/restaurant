@@ -110,6 +110,7 @@ $poppins : 'Poppins', sans-serif;
 @mixin primary-black-btn {
     padding: 14px 20px 14px 35px;
     background-color: $btnBlack;
+    border: none;
     color: $white;
     font-size: 13px;
     display: flex;
@@ -135,6 +136,7 @@ $poppins : 'Poppins', sans-serif;
         }
         i{
             transform: rotateX(360deg);
+
         }
     }
 }

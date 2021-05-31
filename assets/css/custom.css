@@ -1512,6 +1512,7 @@ ul {
 .main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 200px 100px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1525,6 +1526,85 @@ ul {
 
 .main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote {
   text-align: center;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote h1 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #C19D60;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote h1::after {
+  display: block;
+  content: '...';
+  letter-spacing: 6px;
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote h6 {
+  font-size: 21px;
+  color: white;
+  margin-bottom: 26px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote button {
+  padding: 14px 20px 14px 35px;
+  background-color: #292929;
+  border: none;
+  color: white;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  margin: 0 auto;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote button img {
+  position: relative;
+  width: 13px;
+  margin-left: 30px;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote button i {
+  position: relative;
+  font-size: 13px;
+  margin-left: 30px;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote button:hover {
+  background-color: #b19058;
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote button:hover img {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+.main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote button:hover i {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
 }
 
 .main .main-inner .reservations .reservations-inner .row .chef-quote-parent .chef-quote-inner .chef-quote img {
@@ -1603,7 +1683,7 @@ ul {
 
 .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-heading h6 {
   color: #b19058;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   margin-bottom: 12px;
 }
@@ -1725,6 +1805,199 @@ ul {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: white;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10%;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-item .item {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-item .item h5 {
+  font-size: 19px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-item .item h6 {
+  font-size: 13px;
+  color: #b19058;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-item .item p {
+  margin-top: auto;
+  margin-bottom: unset;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  line-height: 24px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-item .item p::after {
+  position: absolute;
+  display: block;
+  content: '......';
+  letter-spacing: 3px;
+  bottom: -35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #222222;
+  font-weight: 500;
+  font-size: 20px;
+  bottom: -20px;
+  content: '...';
+  letter-spacing: 4px;
+  color: #b19058;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-stage-outer {
+  padding: 0 0px;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-stage-outer .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-nav {
+  background-color: red;
+  margin-top: unset;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-nav .owl-prev:hover, .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-nav .owl-prev :focus {
+  background-color: unset;
+  outline: none;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-nav .owl-next:hover, .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-nav .owl-next :focus {
+  background-color: unset;
+  outline: none;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .seperator {
+  max-width: 480px;
+  margin: 0 auto 50px auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .seperator span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .primary-black-btn {
+  padding: 14px 20px 14px 35px;
+  background-color: #292929;
+  border: none;
+  color: white;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #b19058;
+  padding: 14px 20px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .primary-black-btn img {
+  position: relative;
+  width: 13px;
+  margin-left: 30px;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .primary-black-btn i {
+  position: relative;
+  font-size: 13px;
+  margin-left: 30px;
+  -webkit-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .primary-black-btn:hover {
+  background-color: #b19058;
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .primary-black-btn:hover img {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+.main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .primary-black-btn:hover i {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
 }
 
 .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .hotel-number {
@@ -2690,6 +2963,7 @@ ul {
   margin-left: auto;
   padding: 14px 20px 14px 35px;
   background-color: #292929;
+  border: none;
   color: white;
   font-size: 13px;
   display: -webkit-box;
@@ -3881,6 +4155,27 @@ ul {
     margin-right: unset;
     margin-left: 50px;
   }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .seperator {
+    display: none;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 0 20px 0;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots .owl-dot {
+    outline: none !important;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots .owl-dot span {
+    background-color: white;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots .active span {
+    background-color: #C19D60;
+  }
   .main .main-inner .service {
     background-image: none !important;
   }
@@ -4416,6 +4711,12 @@ ul {
     width: 100%;
     padding: 50px 0;
   }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-heading h2 {
+    font-size: 26px;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-heading h2::after {
+    bottom: -25px;
+  }
   .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .opening-hours .row .col-sm-6 ul {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -4456,6 +4757,30 @@ ul {
     height: 1px;
     opacity: 0.6;
     background-color: #b19058;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .seperator {
+    display: none;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent {
+    padding: 0 10px;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 0 20px 0;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots .owl-dot {
+    outline: none !important;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots .owl-dot span {
+    background-color: white;
+  }
+  .main .main-inner .reservations .reservations-inner .row .opening-parent .opening .opening-inner .opening-caption .events-slider-parent .events-slider .owl-dots .active span {
+    background-color: #C19D60;
   }
   .main .main-inner .service {
     background-image: none !important;

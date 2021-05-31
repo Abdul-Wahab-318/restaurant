@@ -226,3 +226,32 @@ let drinks = document.querySelector('#v-pills-drink-tab');
 drinks.addEventListener('click',()=>{
     menuAnimation("url(./assets/img/menu/drinks.jpg)")
 })
+
+
+// UPCOMING EVENTS SLIDER
+
+
+$('.events-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    margin: 0,
+    navText: [
+        "<img src = './assets/img/icons/back-filled-arrow-left.svg' width='13px' />" ,
+        "<img src = './assets/img/icons/back-filled-arrow-right.svg' width='13px' />"
+    ],
+    responsive:{
+        0:{
+            items:1,
+            nav: false
+        },
+        700:{
+            items:2,
+            dots: false
+        },
+        1200:{
+            items:2,
+            dots: false 
+        }
+    }
+})

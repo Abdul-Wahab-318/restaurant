@@ -982,6 +982,30 @@
                                             }
                                         }
                                     }
+                                    .seperator{
+                                        display: none;
+                                    }
+                                    .events-slider-parent{
+                                        .events-slider{
+                                            .owl-dots{
+                                                display: flex;
+                                                justify-content: center;
+                                                margin: 0px 0 20px 0;
+                                                .owl-dot{
+                                                    outline: none !important;
+                                                    span{
+                                                        background-color: $white;
+                                                    }
+                                                    
+                                                }
+                                                .active{
+                                                    span{
+                                                        background-color: $golden2;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -1581,7 +1605,14 @@
                                 .opening-caption{
                                     width: 100%;
                                     padding: 50px 0;
-                          
+                                    .opening-heading{
+                                        h2{
+                                            font-size: 26px;
+                                            &::after{
+                                                bottom: -25px;
+                                            }
+                                        }
+                                    }
                                     .opening-hours{
                                         .row{
                                             .col-sm-6{
@@ -1632,6 +1663,31 @@
                                             height: 1px;
                                             opacity: 0.6;
                                             background-color: $golden;
+                                        }
+                                    }
+                                    .seperator{
+                                        display: none;
+                                    }
+                                    .events-slider-parent{
+                                        padding: 0 10px;
+                                        .events-slider{
+                                            .owl-dots{
+                                                display: flex;
+                                                justify-content: center;
+                                                margin: 0px 0 20px 0;
+                                                .owl-dot{
+                                                    outline: none !important;
+                                                    span{
+                                                        background-color: $white;
+                                                    }
+                                                    
+                                                }
+                                                .active{
+                                                    span{
+                                                        background-color: $golden2;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
