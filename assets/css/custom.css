@@ -2456,6 +2456,7 @@ ul {
 
 .main .main-inner .special-menu {
   /*background-image:  url('../../../assets/img/menu/3.jpg');*/
+  background-color: black;
   background-size: cover;
   background-attachment: scroll;
   background-position: center;
